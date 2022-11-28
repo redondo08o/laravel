@@ -21,6 +21,10 @@ Route::get('/index_admin', function () {
     return view('pages/home/home');
 })->name('index_admin');
 
+Route::get('/login', function () {
+    return view('pages/home/login');
+})->name('login');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

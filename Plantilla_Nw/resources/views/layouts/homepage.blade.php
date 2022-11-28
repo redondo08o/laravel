@@ -64,30 +64,30 @@ Coded by www.creative-tim.com
         <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
           <li class="nav-item uno">
             <a href="#" class="nav-link" href="#">
-              <i class="ni ni-collection d-lg-none"></i>
-              <span class="nav-link-inner--text">Home</span>
+              <i class="fa fa-home d-lg-none"></i>
+              <span class="nav-link-inner--text">Inicio</span>
             </a>
           </li>
           <li class="nav-item  uno">
             <a href="#quienessomos" class="nav-link">
-              <i class="ni ni-collection d-lg-none"></i>
+              <i class="fa fa-users d-lg-none"></i>
               <span class="nav-link-inner--text">Quienes somos</span>
             </a>
           </li>
           <li class="nav-item  uno">
-            <a href="#" class="nav-link" href="#">
-              <i class="ni ni-collection d-lg-none"></i>
-              <span class="nav-link-inner--text">Testimonios</span>
+            <a href="#testimonios" class="nav-link" href="#">
+              <i class="fa fa-comments d-lg-none"></i>
+              <span class="nav-link-inner--text">Resultados</span>
             </a>
           </li>
           <li class="nav-item dropdown  uno">
             <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-              <i class="ni ni-ui-04 d-lg-none"></i>
+              <i class="fa fa-hand-pointer-o d-lg-none"></i>
               <span class="nav-link-inner--text">Interactivo</span>
             </a>
             <div class="dropdown-menu dropdown-menu-xl">
               <div class="dropdown-menu-inner">
-                <a href="https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html" class="media d-flex align-items-center">
+                <a href="#interactivo" class="media d-flex align-items-center">
                   <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
                     <i class="fa fa-calculator" aria-hidden="true"></i>
                   </div>
@@ -96,16 +96,7 @@ Coded by www.creative-tim.com
                     <p class="description d-none d-md-inline-block mb-0">es un método utilizado para estimar la cantidad de grasa corporal que tiene una persona.</p>
                   </div>
                 </a>
-                <a href="https://demos.creative-tim.com/argon-design-system/docs/foundation/colors.html" class="media d-flex align-items-center">
-                  <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                    <i class="fa fa-fire" aria-hidden="true"></i>
-                  </div>
-                  <div class="media-body ml-3">
-                    <h6 class="heading text-primary mb-md-1">Calculadora de calorias</h6>
-                    <p class="description d-none d-md-inline-block mb-0">Tu cuerpo necesita calorías simplemente para funcionar, para que el corazón siga latiendo y los pulmones sigan funcionando.</p>
-                  </div>
-                </a>
-                <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html" class="media d-flex align-items-center">
+                <a href="#interactivo" class="media d-flex align-items-center">
                   <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
                     <i class="fa fa-file-text-o" aria-hidden="true"></i>
                   </div>
@@ -114,7 +105,7 @@ Coded by www.creative-tim.com
                     <p class="description d-none d-md-inline-block mb-0">¿Tienes un estilo de Vida Saludable fantástico?</p>
                   </div>
                 </a>
-                <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html" class="media d-flex align-items-center">
+                <a href="#interactivo" class="media d-flex align-items-center">
                   <div class="icon icon-shape bg-gradient-info rounded-circle text-white">
                     <i class="ni ni-user-run"></i>
                   </div>
@@ -128,7 +119,7 @@ Coded by www.creative-tim.com
           </li>
           <li class="nav-item dropdown  uno">
             <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
-              <i class="ni ni-collection d-lg-none"></i>
+              <i class="fa fa-heartbeat d-lg-none"></i>
               <span class="nav-link-inner--text">Vida saludable</span>
             </a>
             <div class="dropdown-menu">
@@ -141,34 +132,16 @@ Coded by www.creative-tim.com
           </li>
           <li class="nav-item  uno">
             <a href="#" class="nav-link" href="#">
-              <i class="ni ni-collection d-lg-none"></i>
+              <i class="fa fa-money d-lg-none"></i>
               <span class="nav-link-inner--text">precios</span>
             </a>
           </li>
         </ul>
         <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.facebook.com/CreativeTim/" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
-              <i class="fa fa-facebook-square"></i>
-              <span class="nav-link-inner--text d-lg-none">Facebook</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
-              <i class="fa fa-instagram"></i>
-              <span class="nav-link-inner--text d-lg-none">Instagram</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" title="Follow us on Twitter">
-              <i class="fa fa-twitter-square"></i>
-              <span class="nav-link-inner--text d-lg-none">Twitter</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial/argon-design-system" target="_blank" data-toggle="tooltip" title="Star us on Github">
-              <i class="fa fa-github"></i>
-              <span class="nav-link-inner--text d-lg-none">Github</span>
+          <li class="nav-item  uno">
+            <a href="{{route('login')}}" class="nav-link">
+              <i class="fa fa-sign-in d-lg-none"></i>
+              <span class="nav-link-inner--text">Iniciar seccion</span>
             </a>
           </li>
         </ul>
@@ -189,9 +162,9 @@ Coded by www.creative-tim.com
                 <h1 class="text-white display-1">Bienvenidos</h1>
                 <h2 class="display-4 font-weight-normal text-white">a Nutrinional wellnes</h2>
                 <div class="btn-wrapper mt-4">
-                  <a href="https://www.creative-tim.com/product/argon-design-system" class="btn btn-warning btn-icon mt-3 mb-sm-0">
+                  <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-warning btn-icon mt-3 mb-sm-0">
                     <span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
-                    <span class="btn-inner--text">Play more</span>
+                    <span class="btn-inner--text">Acesorate ya</span>
                   </a>
                 </div>
               </div>
@@ -238,525 +211,680 @@ Coded by www.creative-tim.com
       </div>
     </div>
     <!--end seccion quienes somos -->
-    <!--  seccion  -->
-    <div class="section features-1" id="uno">
+
+    <!-- seccion testimonios -->
+    <div class="section features-1" id="testimonios">
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto text-center">
-            <span class="badge badge-primary badge-pill mb-3">Insight</span>
-            <h3 class="display-3">Full-Funnel Social Analytics</h3>
-            <p class="lead">The time is now for it to be okay to be great. For being a bright color. For standing out.</p>
+            <h3 class="display-3">Resultados</h3>
+            <br>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="info">
-              <div class="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle">
-                <i class="ni ni-settings-gear-65"></i>
+        <div class="row ">
+          <div class="col-lg-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ asset('assets_homepage/img/sidel/sidel1.gif')}}" style="width: 100%; height: 300px ;" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">@kiaraoli</h5>
+                          <p class="card-text">¿No puedes ir a un gimnasio?🤔
+                            ¿Puedes pero no te gusta?🤔
+
+                            Para alcanzar los objetivos trazados solo hace falta determinación y ganas.🔥😎
+
+                            Con un entrenamiento adaptado a los materiales que dispongas y una correcta alimentación, entrenar SÍ es una opción válida y viable.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ asset('assets_homepage/img/sidel/sidel2.jpg')}}" style="width: 100%; height: 300px ;" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">@la_juliao</h5>
+                          <p class="card-text">El estilo de vida y los habitos alimentarios determinan la calidad de vida actual y la futura, no permitas que tu cuerpo sufra, alimentate bien, realiza actividad física con regularidad, no busques remedios milagroso y asesorate de la mano de profesionales.</p>
+                          <p class="card-text"><small class="text-muted">Disciplina y constancia para logra tus objetivos, ¡vamos!, ¿que esperas para dar el primer paso?</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ asset('assets_homepage/img/sidel/sidel3.jpg')}}" style="width: 100%; height: 300px ;" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">@dadielromero</h5>
+                          <p class="card-text">Más vale hacer las cosas relativamente bien durante un tiempo prolongado, que hacerlas "perfectas" si no puedes sostenerlo en el tiempo. PACIENCIA & CONSTANCIA, siempre.</p>
+                          <p class="card-text"><small class="text-muted">6 kilos de diferencia entre las fotos, y mucho trabajo por seguir realizando 💪.</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ asset('assets_homepage/img/sidel/sidel4.jpeg')}}" style="width: 100%; height: 300px ;" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">@samir_cassis</h5>
+                          <p class="card-text">Les presentamos el caso de @samir_cassis , a quien se le dificultaba subir de peso y al cabo de 10 semanas trabajando duro ya ha logrado ganar unos 5 kg.</p>
+                          <p class="card-text"><small class="text-muted">Se le denomina así (Ectomorfo) a aquella persona de naturaleza delgada, con poca grasa y poco músculo, a los cuales les suele costar ganar peso.</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <h6 class="info-title text-uppercase text-primary">Social Conversations</h6>
-              <p class="description opacity-8">We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder for us to give others a hand.</p>
-              <a href="javascript:;" class="text-primary">More about us
-                <i class="ni ni-bold-right text-primary"></i>
-              </a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="info">
-              <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle">
-                <i class="ni ni-atom"></i>
-              </div>
-              <h6 class="info-title text-uppercase text-success">Analyze Performance</h6>
-              <p class="description opacity-8">Don't get your heart broken by people we love, even that we give them all we have. Then we lose family over time. As we live, our hearts turn colder.</p>
-              <a href="javascript:;" class="text-primary">Learn about our products
-                <i class="ni ni-bold-right text-primary"></i>
-              </a>
-            </div>
+        </div>
+      </div>
+      <!--end seccion testimonios -->
+
+      <!-- seccion interactivo -->
+      <div class="section features-1">
+        <div class="container" id="interactivo">
+          <h2 class="mb-0">Interactivo</h2>
+          <div class="nav-wrapper">
+            <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="fa fa-calculator mr-2" aria-hidden="true"></i> Imc</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>Test fantastico</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="ni ni-calendar-grid-58 mr-2"></i>Protocolo 1rm</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <div class="info">
-              <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle">
-                <i class="ni ni-world"></i>
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                  <div class="card ">
+                    <h5 class="card-header">Calculadora imc</h5>
+                    <div class="card-body">
+                      <form autocomplete="off" onsubmit="return false">
+                        <div class="mb-3">
+                          <label class="form-label">Talla en metros</label>
+                          <input type="text" id="talla" class="form-control" require>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">peso en kilosgramos</label>
+                          <input type="text" id="peso" class="form-control" require>
+                        </div>
+                        <button class="btn btn-primary" onclick="imc()">calcular</button>
+                      </form>
+                    </div>
+                    <p class="h5" id="imc_detallado"></p>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                  <div class="card ">
+                    <h5 class="card-header">Contesta este test</h5>
+                    <div class="card-body">
+                      <form autocomplete="off" onsubmit="return false">
+                        <div class="mb-3">
+                          <h6>1. ¿Tengo con quien hablar de las cosas que son inportantes para mi?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="f1.1" class="custom-control-input" id="f1.1" type="radio" value="2">
+                            <label class="custom-control-label" for="f1.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="f1.1" class="custom-control-input" id="f1.2" type="radio" value="1">
+                            <label class="custom-control-label" for="f1.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="f1.1" class="custom-control-input" id="f1.3" type="radio" value="0">
+                            <label class="custom-control-label" for="f1.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>2. ¿Yo doy y recibo cariño?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="f2" class="custom-control-input" id="f2.1" type="radio" value="2">
+                            <label class="custom-control-label" for="f2.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="f2" class="custom-control-input" id="f2.2" type="radio" value="1">
+                            <label class="custom-control-label" for="f2.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="f2" class="custom-control-input" id="f2.3" type="radio" value="0">
+                            <label class="custom-control-label" for="f2.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>3. ¿Yo realizo actividad fisica (caminar, subir escaleras, trabajo en casa, hacer el jardin)?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a1" class="custom-control-input" id="a1.1" type="radio" value="2">
+                            <label class="custom-control-label" for="a1.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a1" class="custom-control-input" id="a1.2" type="radio" value="1">
+                            <label class="custom-control-label" for="a1.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a1" class="custom-control-input" id="a1.3" type="radio" value="0">
+                            <label class="custom-control-label" for="a1.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>4. ¿Yo hago ejercicio de forma activa al menos por 20 minutos (corre, andar en bicicleta)?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a2" class="custom-control-input" id="a2.1" type="radio" value="2">
+                            <label class="custom-control-label" for="a2.1">4 o mas veces por semana</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a2" class="custom-control-input" id="a2.2" type="radio" value="1">
+                            <label class="custom-control-label" for="a2.2">1 o 3 veses por semana</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a2" class="custom-control-input" id="a2.3" type="radio" value="0">
+                            <label class="custom-control-label" for="a2.3">Menos de una ves por semana</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>5. ¿Mi alimentacion es balanciada?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="n1" class="custom-control-input" id="n1.1" type="radio" value="2">
+                            <label class="custom-control-label" for="n1.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="n1" class="custom-control-input" id="n1.2" type="radio" value="1">
+                            <label class="custom-control-label" for="n1.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="n1" class="custom-control-input" id="n1.3" type="radio" value="0">
+                            <label class="custom-control-label" for="n1.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>6. ¿Consumo mucha azucar o sal o comida chatarrao con mucha grasa?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="n2" class="custom-control-input" id="n2.1" type="radio" value="2">
+                            <label class="custom-control-label" for="n2.1">Ninguna de estas</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="n2" class="custom-control-input" id="n2.2" type="radio" value="1">
+                            <label class="custom-control-label" for="n2.2">Algunas de estas</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="n2" class="custom-control-input" id="n2.3" type="radio" value="0">
+                            <label class="custom-control-label" for="n2.3">todas estas</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <h6>7. ¿Estoy pasado de mi peso ideal?</h6>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="n3" class="custom-control-input" id="n3.1" type="radio" value="2">
+                          <label class="custom-control-label" for="n3.1">Normal o asta 4 kilos mas</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="n3" class="custom-control-input" id="n3.2" type="radio" value="1">
+                          <label class="custom-control-label" for="n3.2">De 5 a 8 kilos</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="n3" class="custom-control-input" id="n3.3" type="radio" value="0">
+                          <label class="custom-control-label" for="n3.3">Mas de ocho kilos</label>
+                        </div>
+                        <hr size="2px" />
+                        <h6>8. ¿yo fumo cigarillos?</h6>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="t1" class="custom-control-input" id="t1.1" type="radio" value="2">
+                          <label class="custom-control-label" for="t1.1">No en los ultimos 5 años</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="t1" class="custom-control-input" id="t1.2" type="radio" value="1">
+                          <label class="custom-control-label" for="t1.2">No en el ultimo año</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="t1" class="custom-control-input" id="t1.3" type="radio" value="0">
+                          <label class="custom-control-label" for="t1.3">He fumado este año</label>
+                        </div>
+                        <hr size="2px" />
+                        <h6>9. ¿general mente fumo cigarillos por dia?</h6>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="t2" class="custom-control-input" id="t2.1" type="radio" value="2">
+                          <label class="custom-control-label" for="t2.1">Ninguno</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="t2" class="custom-control-input" id="t2.2" type="radio" value="1">
+                          <label class="custom-control-label" for="t2.2">0 a 10</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                          <input name="t2" class="custom-control-input" id="t2.3" type="radio" value="0">
+                          <label class="custom-control-label" for="t2.3">Mas de 10</label>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>10. ¿mi numero promedio de tragos por semana es de ?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a21" class="custom-control-input" id="a21.1" type="radio" value="2">
+                            <label class="custom-control-label" for="a21.1">0 a 7 tragos</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a21" class="custom-control-input" id="a21.2" type="radio" value="1">
+                            <label class="custom-control-label" for="a21.2">8 a 12 tragos</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a21" class="custom-control-input" id="a21.3" type="radio" value="0">
+                            <label class="custom-control-label" for="a21.3">mas de 12</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>11. ¿Bebo mas de 4 tragos en una misma ocacion?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a22" class="custom-control-input" id="a22.1" type="radio" value="2">
+                            <label class="custom-control-label" for="a22.1">Nunca</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a22" class="custom-control-input" id="a22.2" type="radio" value="1">
+                            <label class="custom-control-label" for="a22.2">Ocacionalmente</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a22" class="custom-control-input" id="a22.3" type="radio" value="0">
+                            <label class="custom-control-label" for="a22.3">A menudo</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>12. ¿manejo el auto despues de beber alcohol?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a23" class="custom-control-input" id="a23.1" type="radio" value="2">
+                            <label class="custom-control-label" for="a23.1">Nunca</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a23" class="custom-control-input" id="a23.2" type="radio" value="1">
+                            <label class="custom-control-label" for="a23.2">Solo rara vez</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="a23" class="custom-control-input" id="a23.3" type="radio" value="0">
+                            <label class="custom-control-label" for="a23.3">A menudo</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>13. ¿Duermo bien y me siento descansado/a?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s.1" class="custom-control-input" id="s.1" type="radio" value="2">
+                            <label class="custom-control-label" for="s.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s.1" class="custom-control-input" id="s.2" type="radio" value="1">
+                            <label class="custom-control-label" for="s.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s.1" class="custom-control-input" id="s.3" type="radio" value="0">
+                            <label class="custom-control-label" for="s.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>14. ¿soy capaz de manejar el extres o la tencion en mi vida?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s1" class="custom-control-input" id="s1.1" type="radio" value="2">
+                            <label class="custom-control-label" for="s1.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s1" class="custom-control-input" id="s1.2" type="radio" value="1">
+                            <label class="custom-control-label" for="s1.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s1" class="custom-control-input" id="s1.3" type="radio" value="0">
+                            <label class="custom-control-label" for="s1.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>15. ¿Yo me relajo y disfruto de mi tienpo libre?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s2" class="custom-control-input" id="s2.1" type="radio" value="2">
+                            <label class="custom-control-label" for="s2.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s2" class="custom-control-input" id="s2.2" type="radio" value="1">
+                            <label class="custom-control-label" for="s2.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="s2" class="custom-control-input" id="s2.3" type="radio" value="0">
+                            <label class="custom-control-label" for="s2.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>16. ¿Parese que ando acelerado?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="t21" class="custom-control-input" id="t21.1" type="radio" value="2">
+                            <label class="custom-control-label" for="t21.1">Casi nunca</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="t21" class="custom-control-input" id="t21.2" type="radio" value="1">
+                            <label class="custom-control-label" for="t21.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="t21" class="custom-control-input" id="t21.3" type="radio" value="0">
+                            <label class="custom-control-label" for="t21.3">Casi amenudo</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>17. ¿Me siento enojado o agrecibo/a?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="t22" class="custom-control-input" id="t22.1" type="radio" value="2">
+                            <label class="custom-control-label" for="t22.1">Casi nunca</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="t22" class="custom-control-input" id="t22.2" type="radio" value="1">
+                            <label class="custom-control-label" for="t22.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="t22" class="custom-control-input" id="t22.3" type="radio" value="0">
+                            <label class="custom-control-label" for="t22.3">Casi amenudo</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>18. ¿soy pensador/a positivo y optimista?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i1" class="custom-control-input" id="i1.1" type="radio" value="2">
+                            <label class="custom-control-label" for="i1.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i1" class="custom-control-input" id="i1.2" type="radio" value="1">
+                            <label class="custom-control-label" for="i1.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i1" class="custom-control-input" id="i1.3" type="radio" value="0">
+                            <label class="custom-control-label" for="i1.3">Casi nunca</label>
+                          </div>
+                        </div>
+
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>19. ¿yo me sieto tenso y apretado?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i2" class="custom-control-input" id="i2.1" type="radio" value="2">
+                            <label class="custom-control-label" for="i2.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i2" class="custom-control-input" id="i2.2" type="radio" value="1">
+                            <label class="custom-control-label" for="i2.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i2" class="custom-control-input" id="i2.3" type="radio" value="0">
+                            <label class="custom-control-label" for="i2.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>20. ¿yo me siento deprimido/a o triste?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i3" class="custom-control-input" id="i3.1" type="radio" value="2">
+                            <label class="custom-control-label" for="i3.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i3" class="custom-control-input" id="i3.2" type="radio" value="1">
+                            <label class="custom-control-label" for="i3.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="i3" class="custom-control-input" id="i3.3" type="radio" value="0">
+                            <label class="custom-control-label" for="i3.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>21. ¿Uso siempre el cinturon de seguridad?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="c1" class="custom-control-input" id="c1.1" type="radio" value="2">
+                            <label class="custom-control-label" for="c1.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="c1" class="custom-control-input" id="c1.2" type="radio" value="1">
+                            <label class="custom-control-label" for="c1.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="c1" class="custom-control-input" id="c1.3" type="radio" value="0">
+                            <label class="custom-control-label" for="c1.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>22. ¿Yo me siento satisfecho com mi trabajo y actividades?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="c2" class="custom-control-input" id="c2.1" type="radio" value="2">
+                            <label class="custom-control-label" for="c2.1">Casi siempre</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="c2" class="custom-control-input" id="c2.2" type="radio" value="1">
+                            <label class="custom-control-label" for="c2.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="c2" class="custom-control-input" id="c2.3" type="radio" value="0">
+                            <label class="custom-control-label" for="c2.3">Casi nunca</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>23. ¿Uso drogas como mariguana, cocaina o pasta basica?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o1" class="custom-control-input" id="o1.1" type="radio" value="2">
+                            <label class="custom-control-label" for="o1.1">Nunca</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o1" class="custom-control-input" id="o1.2" type="radio" value="1">
+                            <label class="custom-control-label" for="o1.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o1" class="custom-control-input" id="o1.3" type="radio" value="0">
+                            <label class="custom-control-label" for="o1.3">a menudo</label>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <h6>24. ¿Uso excesivamente los remedios que le indican a los puedo conprar sin recetas?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o2" class="custom-control-input" id="o2.1" type="radio" value="2">
+                            <label class="custom-control-label" for="o2.1">Nunca</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o2" class="custom-control-input" id="o2.2" type="radio" value="1">
+                            <label class="custom-control-label" for="o2.2">A veces</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o2" class="custom-control-input" id="o2.3" type="radio" value="0">
+                            <label class="custom-control-label" for="o2.3">a menudo</label>
+                          </div>
+                        </div>
+                        <hr size="2px" />
+                        <div class="mb-3">
+                          <h6>25. ¿Bebo cafe te o bebidas que tienen cafeina?</h6>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o3" class="custom-control-input" id="o3.1" type="radio" value="2">
+                            <label class="custom-control-label" for="o3.1">Menos de 3 por dia</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o3" class="custom-control-input" id="o3.2" type="radio" value="1">
+                            <label class="custom-control-label" for="o3.2">3 a 6 al dia</label>
+                          </div>
+                          <div class="custom-control custom-radio mb-3">
+                            <input name="o3" class="custom-control-input" id="o3.3" type="radio" value="0">
+                            <label class="custom-control-label" for="o3.3">Mas de 6 por dia</label>
+                          </div>
+                          <div class="mb-3">
+                            <button class="btn btn-primary" onclick="test()">calcular</button>
+                          </div>
+                        </div>
+                      </form>
+                      <p class="h5" id="respuesta"></p>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                  <div class="card ">
+                    <h5 class="card-header">Protocolo 1rm Brzycki</h5>
+                    <div class="card-body">
+                      <form autocomplete="off" onsubmit="return false">
+                        <div class="mb-3">
+                          <label class="form-label">Repeticiones asta el fallo</label>
+                          <input type="text" id="1rm" class="form-control" require>
+                        </div>
+                        <input type="button" class="btn btn-primary" onclick="uno()" value="Calcular">
+                      </form>
+                    </div>
+                    <p class="h5" id="res_1rm"></p>
+                  </div>
+                </div>
+
               </div>
-              <h6 class="info-title text-uppercase text-warning">Measure Conversions</h6>
-              <p class="description opacity-8">What else could rust the heart more over time? Blackgold. The time is now for it to be okay to be great. or being a bright color. For standing out.</p>
-              <a href="javascript:;" class="text-primary">Check our documentation
-                <i class="ni ni-bold-right text-primary"></i>
-              </a>
+
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--end seccion  -->
-    <!-- seccion interactivo -->
-    <div class="container">
-      <h2 class="mb-0">Interactivo</h2>
-      <div class="nav-wrapper">
-        <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="fa fa-calculator mr-2" aria-hidden="true"></i> Imc</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-bell-55 mr-2"></i>Test fantastico</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3" role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="ni ni-calendar-grid-58 mr-2"></i>Messages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4" role="tab" aria-controls="tabs-icons-text-4" aria-selected="false"><i class="ni ni-calendar-grid-58 mr-2"></i>oter</a>
-          </li>
-        </ul>
-      </div>
-      <div class="card shadow">
-        <div class="card-body">
-          <div class="tab-content" id="myTabContent">
-
-            <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
-              <div class="card ">
-                <h5 class="card-header">Calculadora imc</h5>
-                <div class="card-body">
-                  <form autocomplete="off" onsubmit="return false">
-                    <div class="mb-3">
-                      <label class="form-label">Talla en metros</label>
-                      <input type="text" id="talla" class="form-control" require>
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">peso en kilosgramos</label>
-                      <input type="text" id="peso" class="form-control" require>
-                    </div>
-                    <button class="btn btn-primary" onclick="imc()">calcular</button>
-                  </form>
-                </div>
-                <p class="h5" id="imc_detallado"></p>
-              </div>
-            </div>
-
-            <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
-              <div class="card ">
-                <h5 class="card-header">Contesta este test</h5>
-                <div class="card-body">
-                  <form autocomplete="off" onsubmit="return false">
-                    <div class="mb-3">
-                      <h6>1. ¿Tengo con quien hablar de las cosas que son inportantes para mi?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="f1.1" class="custom-control-input" id="f1.1" type="radio" value="2">
-                        <label class="custom-control-label" for="f1.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="f1.1" class="custom-control-input" id="f1.2" type="radio" value="1">
-                        <label class="custom-control-label" for="f1.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="f1.1" class="custom-control-input" id="f1.3" type="radio" value="0">
-                        <label class="custom-control-label" for="f1.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>2. ¿Yo doy y recibo cariño?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="f2" class="custom-control-input" id="f2.1" type="radio" value="2">
-                        <label class="custom-control-label" for="f2.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="f2" class="custom-control-input" id="f2.2" type="radio" value="1">
-                        <label class="custom-control-label" for="f2.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="f2" class="custom-control-input" id="f2.3" type="radio" value="0">
-                        <label class="custom-control-label" for="f2.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>3. ¿Yo realizo actividad fisica (caminar, subir escaleras, trabajo en casa, hacer el jardin)?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a1" class="custom-control-input" id="a1.1" type="radio" value="2">
-                        <label class="custom-control-label" for="a1.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a1" class="custom-control-input" id="a1.2" type="radio" value="1">
-                        <label class="custom-control-label" for="a1.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a1" class="custom-control-input" id="a1.3" type="radio" value="0">
-                        <label class="custom-control-label" for="a1.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>4. ¿Yo hago ejercicio de forma activa al menos por 20 minutos (corre, andar en bicicleta)?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a2" class="custom-control-input" id="a2.1" type="radio" value="2">
-                        <label class="custom-control-label" for="a2.1">4 o mas veces por semana</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a2" class="custom-control-input" id="a2.2" type="radio" value="1">
-                        <label class="custom-control-label" for="a2.2">1 o 3 veses por semana</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a2" class="custom-control-input" id="a2.3" type="radio" value="0">
-                        <label class="custom-control-label" for="a2.3">Menos de una ves por semana</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>5. ¿Mi alimentacion es balanciada?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="n1" class="custom-control-input" id="n1.1" type="radio" value="2">
-                        <label class="custom-control-label" for="n1.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="n1" class="custom-control-input" id="n1.2" type="radio" value="1">
-                        <label class="custom-control-label" for="n1.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="n1" class="custom-control-input" id="n1.3" type="radio" value="0">
-                        <label class="custom-control-label" for="n1.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>6. ¿Consumo mucha azucar o sal o comida chatarrao con mucha grasa?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="n2" class="custom-control-input" id="n2.1" type="radio" value="2">
-                        <label class="custom-control-label" for="n2.1">Ninguna de estas</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="n2" class="custom-control-input" id="n2.2" type="radio" value="1">
-                        <label class="custom-control-label" for="n2.2">Algunas de estas</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="n2" class="custom-control-input" id="n2.3" type="radio" value="0">
-                        <label class="custom-control-label" for="n2.3">todas estas</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <h6>7. ¿Estoy pasado de mi peso ideal?</h6>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="n3" class="custom-control-input" id="n3.1" type="radio" value="2">
-                      <label class="custom-control-label" for="n3.1">Normal o asta 4 kilos mas</label>
-                    </div>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="n3" class="custom-control-input" id="n3.2" type="radio" value="1">
-                      <label class="custom-control-label" for="n3.2">De 5 a 8 kilos</label>
-                    </div>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="n3" class="custom-control-input" id="n3.3" type="radio" value="0">
-                      <label class="custom-control-label" for="n3.3">Mas de ocho kilos</label>
-                    </div>
-                    <hr size="2px" />
-                    <h6>8. ¿yo fumo cigarillos?</h6>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="t1" class="custom-control-input" id="t1.1" type="radio" value="2">
-                      <label class="custom-control-label" for="t1.1">No en los ultimos 5 años</label>
-                    </div>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="t1" class="custom-control-input" id="t1.2" type="radio" value="1">
-                      <label class="custom-control-label" for="t1.2">No en el ultimo año</label>
-                    </div>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="t1" class="custom-control-input" id="t1.3" type="radio" value="0">
-                      <label class="custom-control-label" for="t1.3">He fumado este año</label>
-                    </div>
-                    <hr size="2px" />
-                    <h6>9. ¿general mente fumo cigarillos por dia?</h6>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="t2" class="custom-control-input" id="t2.1" type="radio" value="2">
-                      <label class="custom-control-label" for="t2.1">Ninguno</label>
-                    </div>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="t2" class="custom-control-input" id="t2.2" type="radio" value="1">
-                      <label class="custom-control-label" for="t2.2">0 a 10</label>
-                    </div>
-                    <div class="custom-control custom-radio mb-3">
-                      <input name="t2" class="custom-control-input" id="t2.3" type="radio" value="0">
-                      <label class="custom-control-label" for="t2.3">Mas de 10</label>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>10. ¿mi numero promedio de tragos por semana es de ?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a21" class="custom-control-input" id="a21.1" type="radio" value="2">
-                        <label class="custom-control-label" for="a21.1">0 a 7 tragos</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a21" class="custom-control-input" id="a21.2" type="radio" value="1">
-                        <label class="custom-control-label" for="a21.2">8 a 12 tragos</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a21" class="custom-control-input" id="a21.3" type="radio" value="0">
-                        <label class="custom-control-label" for="a21.3">mas de 12</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>11. ¿Bebo mas de 4 tragos en una misma ocacion?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a22" class="custom-control-input" id="a22.1" type="radio" value="2">
-                        <label class="custom-control-label" for="a22.1">Nunca</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a22" class="custom-control-input" id="a22.2" type="radio" value="1">
-                        <label class="custom-control-label" for="a22.2">Ocacionalmente</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a22" class="custom-control-input" id="a22.3" type="radio" value="0">
-                        <label class="custom-control-label" for="a22.3">A menudo</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>12. ¿manejo el auto despues de beber alcohol?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a23" class="custom-control-input" id="a23.1" type="radio" value="2">
-                        <label class="custom-control-label" for="a23.1">Nunca</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a23" class="custom-control-input" id="a23.2" type="radio" value="1">
-                        <label class="custom-control-label" for="a23.2">Solo rara vez</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="a23" class="custom-control-input" id="a23.3" type="radio" value="0">
-                        <label class="custom-control-label" for="a23.3">A menudo</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>13. ¿Duermo bien y me siento descansado/a?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s.1" class="custom-control-input" id="s.1" type="radio" value="2">
-                        <label class="custom-control-label" for="s.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s.1" class="custom-control-input" id="s.2" type="radio" value="1">
-                        <label class="custom-control-label" for="s.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s.1" class="custom-control-input" id="s.3" type="radio" value="0">
-                        <label class="custom-control-label" for="s.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>14. ¿soy capaz de manejar el extres o la tencion en mi vida?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s1" class="custom-control-input" id="s1.1" type="radio" value="2">
-                        <label class="custom-control-label" for="s1.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s1" class="custom-control-input" id="s1.2" type="radio" value="1">
-                        <label class="custom-control-label" for="s1.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s1" class="custom-control-input" id="s1.3" type="radio" value="0">
-                        <label class="custom-control-label" for="s1.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>15. ¿Yo me relajo y disfruto de mi tienpo libre?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s2" class="custom-control-input" id="s2.1" type="radio" value="2">
-                        <label class="custom-control-label" for="s2.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s2" class="custom-control-input" id="s2.2" type="radio" value="1">
-                        <label class="custom-control-label" for="s2.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="s2" class="custom-control-input" id="s2.3" type="radio" value="0">
-                        <label class="custom-control-label" for="s2.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>16. ¿Parese que ando acelerado?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="t21" class="custom-control-input" id="t21.1" type="radio" value="2">
-                        <label class="custom-control-label" for="t21.1">Casi nunca</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="t21" class="custom-control-input" id="t21.2" type="radio" value="1">
-                        <label class="custom-control-label" for="t21.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="t21" class="custom-control-input" id="t21.3" type="radio" value="0">
-                        <label class="custom-control-label" for="t21.3">Casi amenudo</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>17. ¿Me siento enojado o agrecibo/a?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="t22" class="custom-control-input" id="t22.1" type="radio" value="2">
-                        <label class="custom-control-label" for="t22.1">Casi nunca</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="t22" class="custom-control-input" id="t22.2" type="radio" value="1">
-                        <label class="custom-control-label" for="t22.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="t22" class="custom-control-input" id="t22.3" type="radio" value="0">
-                        <label class="custom-control-label" for="t22.3">Casi amenudo</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>18. ¿soy pensador/a positivo y optimista?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i1" class="custom-control-input" id="i1.1" type="radio" value="2">
-                        <label class="custom-control-label" for="i1.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i1" class="custom-control-input" id="i1.2" type="radio" value="1">
-                        <label class="custom-control-label" for="i1.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i1" class="custom-control-input" id="i1.3" type="radio" value="0">
-                        <label class="custom-control-label" for="i1.3">Casi nunca</label>
-                      </div>
-                    </div>
-
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>19. ¿yo me sieto tenso y apretado?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i2" class="custom-control-input" id="i2.1" type="radio" value="2">
-                        <label class="custom-control-label" for="i2.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i2" class="custom-control-input" id="i2.2" type="radio" value="1">
-                        <label class="custom-control-label" for="i2.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i2" class="custom-control-input" id="i2.3" type="radio" value="0">
-                        <label class="custom-control-label" for="i2.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>20. ¿yo me siento deprimido/a o triste?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i3" class="custom-control-input" id="i3.1" type="radio" value="2">
-                        <label class="custom-control-label" for="i3.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i3" class="custom-control-input" id="i3.2" type="radio" value="1">
-                        <label class="custom-control-label" for="i3.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="i3" class="custom-control-input" id="i3.3" type="radio" value="0">
-                        <label class="custom-control-label" for="i3.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>21. ¿Uso siempre el cinturon de seguridad?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="c1" class="custom-control-input" id="c1.1" type="radio" value="2">
-                        <label class="custom-control-label" for="c1.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="c1" class="custom-control-input" id="c1.2" type="radio" value="1">
-                        <label class="custom-control-label" for="c1.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="c1" class="custom-control-input" id="c1.3" type="radio" value="0">
-                        <label class="custom-control-label" for="c1.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>22. ¿Yo me siento satisfecho com mi trabajo y actividades?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="c2" class="custom-control-input" id="c2.1" type="radio" value="2">
-                        <label class="custom-control-label" for="c2.1">Casi siempre</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="c2" class="custom-control-input" id="c2.2" type="radio" value="1">
-                        <label class="custom-control-label" for="c2.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="c2" class="custom-control-input" id="c2.3" type="radio" value="0">
-                        <label class="custom-control-label" for="c2.3">Casi nunca</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>23. ¿Uso drogas como mariguana, cocaina o pasta basica?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o1" class="custom-control-input" id="o1.1" type="radio" value="2">
-                        <label class="custom-control-label" for="o1.1">Nunca</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o1" class="custom-control-input" id="o1.2" type="radio" value="1">
-                        <label class="custom-control-label" for="o1.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o1" class="custom-control-input" id="o1.3" type="radio" value="0">
-                        <label class="custom-control-label" for="o1.3">a menudo</label>
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <h6>24. ¿Uso excesivamente los remedios que le indican a los puedo conprar sin recetas?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o2" class="custom-control-input" id="o2.1" type="radio" value="2">
-                        <label class="custom-control-label" for="o2.1">Nunca</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o2" class="custom-control-input" id="o2.2" type="radio" value="1">
-                        <label class="custom-control-label" for="o2.2">A veces</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o2" class="custom-control-input" id="o2.3" type="radio" value="0">
-                        <label class="custom-control-label" for="o2.3">a menudo</label>
-                      </div>
-                    </div>
-                    <hr size="2px" />
-                    <div class="mb-3">
-                      <h6>25. ¿Bebo cafe te o bebidas que tienen cafeina?</h6>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o3" class="custom-control-input" id="o3.1" type="radio" value="2">
-                        <label class="custom-control-label" for="o3.1">Menos de 3 por dia</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o3" class="custom-control-input" id="o3.2" type="radio" value="1">
-                        <label class="custom-control-label" for="o3.2">3 a 6 al dia</label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="o3" class="custom-control-input" id="o3.3" type="radio" value="0">
-                        <label class="custom-control-label" for="o3.3">Mas de 6 por dia</label>
-                      </div>
-                      <div class="mb-3">
-                        <button class="btn btn-primary" onclick="test()">calcular</button>
-                      </div>
-                  </form>
-                  <p class="h5" id="respuesta"></p>
-                </div>
-                
-              </div>
-            </div>
-
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  </div>
-  </div>
-
-  </div>
-  </div>
   </div>
 
   <!--end  seccion interactivo -->
+
+  <!--  seccion  -->
+  <div class="section features-1" id="uno">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <span class="badge badge-primary badge-pill mb-3">Insight</span>
+          <h3 class="display-3">Full-Funnel Social Analytics</h3>
+          <p class="lead">The time is now for it to be okay to be great. For being a bright color. For standing out.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info">
+            <div class="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle">
+              <i class="ni ni-settings-gear-65"></i>
+            </div>
+            <h6 class="info-title text-uppercase text-primary">Social Conversations</h6>
+            <p class="description opacity-8">We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder for us to give others a hand.</p>
+            <a href="javascript:;" class="text-primary">More about us
+              <i class="ni ni-bold-right text-primary"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info">
+            <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle">
+              <i class="ni ni-atom"></i>
+            </div>
+            <h6 class="info-title text-uppercase text-success">Analyze Performance</h6>
+            <p class="description opacity-8">Don't get your heart broken by people we love, even that we give them all we have. Then we lose family over time. As we live, our hearts turn colder.</p>
+            <a href="javascript:;" class="text-primary">Learn about our products
+              <i class="ni ni-bold-right text-primary"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info">
+            <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle">
+              <i class="ni ni-world"></i>
+            </div>
+            <h6 class="info-title text-uppercase text-warning">Measure Conversions</h6>
+            <p class="description opacity-8">What else could rust the heart more over time? Blackgold. The time is now for it to be okay to be great. or being a bright color. For standing out.</p>
+            <a href="javascript:;" class="text-primary">Check our documentation
+              <i class="ni ni-bold-right text-primary"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end seccion  -->
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contactanos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputname" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleInputname">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" id="" rows="3" placeholder=""></textarea>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
   <br /><br />
   <footer class="footer">
