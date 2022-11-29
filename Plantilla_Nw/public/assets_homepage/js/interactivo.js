@@ -579,8 +579,9 @@ function test() {
 
 function uno() {
     var rm = document.getElementById("1rm").value;
-    var res = (102.78 - 2.78) * rm;
-    document.getElementById("res_1rm").innerHTML = `<div class="alert alert-info" role="alert">
-        tu test 1rm dio como resultado ${res} 
+    var pes= document.getElementById("pes").value;
+    var res = pes / (1.0278 - (0.0278 * rm));
+    document.getElementById("res_1rm").innerHTML = `<div class="alert alert-success" role="alert">
+        El total de peso para una sola repeticion es ${res.toFixed(1)} 
       </div>`;
 }

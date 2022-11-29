@@ -12,7 +12,7 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8" />
@@ -196,16 +196,55 @@ Coded by www.creative-tim.com
 
               </div>
             </div>
-            <div class="info info-horizontal info-hover-primary mt-5">
-              <div class="description pl-4">
-                <h5 class="title">Valores</h5>
-                <p>That’s what I do. That’s what I’m here for. Don’t be afraid to be wrong because you can’t learn anything from a compliment. If everything I did failed - which it doesn't.</p>
-
-              </div>
-            </div>
           </div>
           <div class="col-lg-6 col-10 mx-md-auto">
             <img class="ml-lg-5" src="{{ asset('assets_homepage/img/favicon.png')}}" width="100%">
+          </div>
+          <div class="col-lg-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                  <span class="badge badge-primary badge-pill mb-3"></span>
+                  <h3 class="display-3">Valores</h3>
+                  <p class="lead"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="info">
+
+                    <h6 class="info-title text-uppercase text-primary">Responsabilidad</h6>
+                    <p class="description text-ju">Llevar a cabo todas las acciones necesarias para brindar un servicio puntual, de calidad y bajo los tiempos correspondido.</p>
+
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="info">
+
+
+                    <h6 class="info-title text-uppercase text-success"> Respeto </h6>
+                    <p class="description  text-ju ">teniendo en cuenta las diversas costumbres alimentarias se implementan estrategias nutricionales enfocadas la los aspectos culturales, étnicos o raizales.</p>
+
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="info">
+
+
+                    <h6 class="info-title text-uppercase text-warning">Honestidad</h6>
+                    <p class="description text-ju">Se establecen objetivos realistas bajo los distintos condicionantes o factores internos o externos en los que se encuentra cada individuo.</p>
+
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="info">
+
+                    <h6 class="info-title text-uppercase text-info">Integridad</h6>
+                    <p class="description text-ju"> A través de un servicio humanizado se brinda las mejores atenciones frente a las necesidades del usuario.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -769,11 +808,30 @@ Coded by www.creative-tim.com
                 <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
                   <div class="card ">
                     <h5 class="card-header">Protocolo 1rm Brzycki</h5>
+
                     <div class="card-body">
+                      <div class="mb-3">
+                        <p>Recuerda que, el test es mas efectivo realizando la prueba a menos de 10 repeticiones </p>
+                      </div>
                       <form autocomplete="off" onsubmit="return false">
                         <div class="mb-3">
-                          <label class="form-label">Repeticiones asta el fallo</label>
-                          <input type="text" id="1rm" class="form-control" require>
+                          <label class="form-label">Peso usual levantado</label>
+                          <input type="text" id="pes" class="form-control" require>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Repeticiones hasta el fallo</label>
+                          <p class="description">Si tus repeticiones hasta el fallo son mayor a 10 realiza una serie mas, aumentando el peso levantado</p>
+                          <select name="" class="form-control" id="1rm">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
                         </div>
                         <input type="button" class="btn btn-primary" onclick="uno()" value="Calcular">
                       </form>
@@ -800,47 +858,65 @@ Coded by www.creative-tim.com
       <div class="row">
         <div class="col-md-8 mx-auto text-center">
           <span class="badge badge-primary badge-pill mb-3">Insight</span>
-          <h3 class="display-3">Full-Funnel Social Analytics</h3>
-          <p class="lead">The time is now for it to be okay to be great. For being a bright color. For standing out.</p>
+          <h3 class="display-3">Nuestros Planes</h3>
+          <p class="lead">“ningún plan nutricional debe ser una tortura”.</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="info">
-            <div class="icon icon-lg icon-shape icon-shape-primary shadow rounded-circle">
-              <i class="ni ni-settings-gear-65"></i>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="{{ asset('assets_homepage/img/plan_n.png')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Asesorias nutricionales</h5>
+              <p class="card-text">Plan de alimentacion ajustado a sus nesecidades y obgetivos. <br>
+                Perdida o ganancia de peso corporal</p>
             </div>
-            <h6 class="info-title text-uppercase text-primary">Social Conversations</h6>
-            <p class="description opacity-8">We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder for us to give others a hand.</p>
-            <a href="javascript:;" class="text-primary">More about us
-              <i class="ni ni-bold-right text-primary"></i>
-            </a>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Registro quincenal de progreso</li>
+              <li class="list-group-item">Acompañamiento 24/7</li>
+              <li class="list-group-item">precio:</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Mas informacion</a>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="info">
-            <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle">
-              <i class="ni ni-atom"></i>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="{{ asset('assets_homepage/img/plan_e.png')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">entrenamiento personalizado</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <h6 class="info-title text-uppercase text-success">Analyze Performance</h6>
-            <p class="description opacity-8">Don't get your heart broken by people we love, even that we give them all we have. Then we lose family over time. As we live, our hearts turn colder.</p>
-            <a href="javascript:;" class="text-primary">Learn about our products
-              <i class="ni ni-bold-right text-primary"></i>
-            </a>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Mas informacion</a>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="info">
-            <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle">
-              <i class="ni ni-world"></i>
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="{{ asset('assets_homepage/img/plan_u.png')}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Plan conbinado</h5>
+              <p class="card-text">Todo lo que nesecitas en uno solo.</p>
             </div>
-            <h6 class="info-title text-uppercase text-warning">Measure Conversions</h6>
-            <p class="description opacity-8">What else could rust the heart more over time? Blackgold. The time is now for it to be okay to be great. or being a bright color. For standing out.</p>
-            <a href="javascript:;" class="text-primary">Check our documentation
-              <i class="ni ni-bold-right text-primary"></i>
-            </a>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Asesoria nutricional</li>
+              <li class="list-group-item">entrenamiento personalizado</li>
+              <li class="list-group-item">precio:</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Mas informacion</a>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -974,5 +1050,16 @@ Coded by www.creative-tim.com
     scrollNav();
   </script>
 </body>
+
+<style>
+  @supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
+    .text-ju {
+      text-align: justify;
+      -webkit-hyphens: auto;
+      /* A día de hoy aún es necesario el prefijo para soportar a Safari */
+      hyphens: auto;
+    }
+  }
+</style>
 
 </html>
