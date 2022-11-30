@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\historyController;
 use App\Http\Controllers\usersController;
 use Illuminate\Support\Facades\Route;
 
@@ -40,3 +41,5 @@ Route::middleware([
 route::get('/My_users',[usersController::class,'My_user'])->name('users');
 
 route::get('/frm_registe',[usersController::class,'frm_register'])->name('frm_register');
+
+route::get('/home_history',[historyController::class, 'index'])->name('history');

@@ -104,6 +104,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="col-md-4">
             <div class="card card-profile">
                 <img src="https://img.freepik.com/fotos-premium/comida-sana-nutricionista-borrosa_23-2148256178.jpg?w=2000" alt="Image placeholder" class="card-img-top">
@@ -111,11 +112,12 @@
                     <div class="col-4 col-lg-4 order-lg-2">
                         <div class="mt-n4 mt-lg-n6 mb-4 mb-lg-0">
                             <a href="javascript:;">
-                                <img src="https://scontent.fbaq1-1.fna.fbcdn.net/v/t39.30808-6/246230611_3097786470549315_3969044645164935754_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEYmawRc1FYK5_oeFJcHPKK9sLG9-c_M172wsb35z8zXjweIutan8wemp5b8xuPi0XzKVTBRRXRnqijwn1RS-sj&_nc_ohc=bhcjUAPtiE0AX-DbirT&_nc_ht=scontent.fbaq1-1.fna&oh=00_AfDC_482Ty_nrGLsiASziMDIROR7knQYjfoIUUQokgzmeg&oe=637CF8C3" class="rounded-circle img-fluid border border-2 border-white">
+                                <img src="{{ asset('assets/img/ivana-square.jpg')}}" class="rounded-circle img-fluid border border-2 border-white">
                             </a>
                         </div>
                     </div>
                 </div>
+                
                 <div class="text-center mt-4">
                     <h5>
                         Geraldin redondo<span class="font-weight-light">, 24</span>
