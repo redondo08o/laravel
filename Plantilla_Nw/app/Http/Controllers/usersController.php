@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class usersController extends Controller
 {
-    public function My_user(){
+    public function pacientes(){
         
-        return view('pages.user.users');
+        return view('pages.user.pacientes');
     }
 
     public function frm_register(){

@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/index_admin', function () {
-    return view('pages/home/home');
+    return view('pages/home/profile');
 })->name('index_admin');
 
 Route::get('/login', function () {
@@ -38,7 +38,7 @@ Route::middleware([
 });
 
 
-route::get('/My_users',[usersController::class,'My_user'])->name('users');
+route::get('/pacientes',[usersController::class,'pacientes'])->name('pacientes');
 
 route::get('/frm_registe',[usersController::class,'frm_register'])->name('frm_register');
 

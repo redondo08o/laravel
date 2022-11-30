@@ -1,4 +1,4 @@
-<?php $act="home";?>
+<?php $act="profile";?>
 
 @extends('layouts.admin')
 
