@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\usersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts/homepage');
+    return view('layouts/homepage',);
 });
 
 Route::get('/index_admin', function () {
@@ -34,3 +35,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+route::get('/My_users',[usersController::class,'My_user'])->name('users');
+
+route::get('/frm_registe',[usersController::class,'frm_register'])->name('frm_register');
