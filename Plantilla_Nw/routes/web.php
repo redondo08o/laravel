@@ -43,3 +43,7 @@ route::get('/pacientes',[usersController::class,'pacientes'])->name('pacientes')
 route::get('/frm_registe',[usersController::class,'frm_register'])->name('frm_register');
 
 route::get('/home_history',[historyController::class, 'index'])->name('history');
+
+route::get('/users', [usersController::class, 'users'])->name('users');
+
+route::post('/user/registar', [usersController::class,'registrar']);
