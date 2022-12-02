@@ -3,7 +3,6 @@
 @extends('layouts.admin')
 
 @section('content')
-
 <div class="card mb-4">
     <div class="card-header pb-0">
         <h6 class="md-4">Usuarios</h6>
@@ -21,7 +20,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form role="form" action="/user/registar" method="POST">
+                    <form autocomplete="off" action="{{ route('registrar_usuario')}}" id="formulario_usuarios" method="POST">
                         @csrf
                         <div class="mb-3">
                             <div class="row">
@@ -36,7 +35,7 @@
                                 </div>
                                 <div class="col-md-7">
                                     <div class="form-floating mb-3">
-                                        <input type="text" name="n_doc" class="form-control" id="n_doc">
+                                        <input type="number" name="n_doc" class="form-control" id="n_doc">
                                         <label for="n_doc">N° documento</label>
                                     </div>
                                 </div>
@@ -88,29 +87,83 @@
 
 
     <div class="card-body px-0 pt-0 pb-2">
-        <div class="table-responsive p-0">
-            <table class="table align-items-center mb-0">
-                <thead>
-                    <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nombre</th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Rol
-                        </th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                            Tipo doc
-                        </th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                            N° documento</th>
-                        <th class="text-secondary opacity-7"></th>
-                    </tr>
-                </thead>
-                <tbody>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2 " tabindex="0">
+
+            <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                    <thead>
+                        <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nombre</th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Rol
+                            </th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Tipo doc
+                            </th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                N° documento</th>
+                            <th class="text-secondary opacity-7"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
                         <livewire:usuarios-list>
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
+
+<style>
+    .bd-example>:last-child {
+        margin-bottom: 0;
+    }
+
+    .scrollspy-example {
+        height:300px;
+        margin-top: 0.5rem;
+        overflow: auto ;
+        scrollbar-width: none;
+    }
+
+    .rounded-2 {
+        border-radius: var(--bs-border-radius) !important;
+    }
+
+    .bg-light {
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    }
+
+    .p-3 {
+        padding: 1rem !important;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+    .scrollspy-example::-webkit-scrollbar {
+display: none;
+}
+
+    .bd-example {
+        --bd-example-padding: 1rem;
+        position: relative;
+        padding: var(--bd-example-padding);
+        margin: 0 -1.5rem;
+        border: solid #dee2e6;
+        border-width: 1px 0;
+    }
+
+    .bd-gutter {
+        --bs-gutter-x: 3rem;
+    }
+
+    
+</style>
+
 
 @endsection

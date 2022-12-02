@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('usu_alias');
             $table->string('usu_correo');
             $table->longText('usu_uid');
+            $table->integer('usu_est');
             $table->timestamps();
         });
     }

@@ -46,4 +46,4 @@ route::get('/home_history',[historyController::class, 'index'])->name('history')
 
 route::get('/users', [usersController::class, 'users'])->name('users');
 
-route::post('/user/registar', [usersController::class,'registrar']);
+route::post('/user/registar', [usersController::class,'registrar'])->name('registrar_usuario');

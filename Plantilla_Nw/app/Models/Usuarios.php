@@ -17,6 +17,7 @@ class Usuarios extends Model
         'usu_contraseña',
         'usu_alias',
         'usu_correo',
-        'usu_uid'
+        'usu_uid',
+        'usu_est'
     ];
 }
