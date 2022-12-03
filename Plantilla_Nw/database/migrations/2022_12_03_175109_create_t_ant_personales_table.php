@@ -27,7 +27,6 @@ return new class extends Migration
             $table->string('antper_est_emba');
             $table->string('antper_vomitos');
             $table->string('antper_dolor_abd');
-            $table->string('antper_dolor_abd');
             $table->string('antper_meses_gestion');
             $table->timestamps();
             $table->foreign('antper_per_id')->references('per_usu_id')->on('t_datos_pers');
