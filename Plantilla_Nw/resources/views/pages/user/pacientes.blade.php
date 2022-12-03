@@ -154,7 +154,7 @@
                                                         <input class="form-control" type="password">
                                                     </div>
                                                 </div>
-                                                <a class="nxt__btn" onclick="nextForm();"> Next</a>
+                                                <a class="nxt__btn" onclick="nextForm();"> Siguiente</a>
                                             </div>
                                         </div>
                                     </fieldset>
@@ -238,8 +238,8 @@
                                             </div>
 
                                             <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Back</a>
-                                                <a class="nxt__btn" onclick="nextForm();">Next</a>
+                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                             </div>
                                         </div>
                                     </fieldset>
@@ -470,8 +470,8 @@
                                                 </div>
                                             </div>
                                             <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Back</a>
-                                                <a class="nxt__btn" onclick="nextForm();">Next</a>
+                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                             </div>
                                         </div>
                                     </fieldset>
@@ -567,8 +567,8 @@
                                                 </div>
                                             </div>
                                             <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Back</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                             </div>
                                         </div>
                                     </fieldset>
@@ -670,8 +670,8 @@
                                                 </div>
                                             </div>
                                             <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Back</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                             </div>
                                         </div>
                                     </fieldset>
@@ -755,8 +755,8 @@
                                             </div>
                                         </div>
                                         <div class="buttons">
-                                            <a class="prev__btn" onclick="prevForm();">Back</a>
-                                            <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                            <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                         </div>
                                     </fieldset>
                                     <fieldset class="active__form" id="form7">
@@ -806,8 +806,8 @@
                                             </div>
                                         </div>
                                             <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Back</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                         </div>
                                     </fieldset>
                                     <fieldset class="active__form" id="form8">
@@ -857,8 +857,8 @@
                                             </div>
                                         </div>
                                             <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Back</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                         </div>
                                     </fieldset>
                                     <fieldset class="active__form" id="form9">
@@ -940,8 +940,8 @@
                                             </div>
                                         </div>
                                             <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Back</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                         </div>
                                     </fieldset>
                                     <fieldset class="active__form" id="form10">
@@ -1061,8 +1061,8 @@
                                             </div>
                                         </div>
                                             <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Back</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Enviar</a>
                                         </div>
                                     </fieldset>
                                 </div>

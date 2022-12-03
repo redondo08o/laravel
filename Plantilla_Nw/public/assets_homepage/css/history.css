@@ -183,8 +183,7 @@
     padding: 0.75rem 0;
     font-size: 1.1rem;
     font-weight: bold;
-    border-radius: 2rem;
-    background: var(--secondery-color);
+
     color: #ffffff;
     /* border: none; */
     /* outline: none; */
@@ -196,6 +195,8 @@
     transform: scale(1.03);
     background:#1cd68c ;
     cursor: pointer;
+    border-radius: 2rem;
+    background: var(--secondery-color);
 }
 .buttons{
     display: flex;
