@@ -42,22 +42,29 @@
                                             <p>selecionar y continuar</p>
                                         </div>
                                         <div class="title__name">
-                                            <h3>Datos alimenticios</h3>
-                                            <p>LLenar y continuar</p>
-                                        </div>
-                                        <div class="title__name">
                                             <h3>Actividad fisica</h3>
                                             <p>LLenar y continuar</p>
                                         </div>
                                         <div class="title__name">
-                                            <h3>Seguimiento</h3>
+                                            <h3>Datos alimenticios</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Alimentos  Preferidos</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Alimentos no Preferidos</h3>
                                             <p>LLenar y continuar</p>
                                         </div>
                                         <div class="title__name">
                                             <h3>Recordatorio 24 horas</h3>
                                             <p>LLenar y continuar</p>
                                         </div>
-
+                                        <div class="title__name">
+                                            <h3>Seguimiento</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
                                     </div>
                                     <div class="progress__bar__container">
                                         <ul>
@@ -85,13 +92,19 @@
                                             <li id="icon8">
                                                 <ion-icon name="mail-outline"></ion-icon>
                                             </li>
+                                            <li id="icon9">
+                                                <ion-icon name="mail-outline"></ion-icon>
+                                            </li>
+                                            <li id="icon10">
+                                                <ion-icon name="mail-outline"></ion-icon>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="right__container">
                                     <fieldset id="form1">
                                         <div class="sub__title__container">
-                                            <h4>Pagina 1/8</h4>
+                                            <h4>Pagina 1/10</h4>
                                             <h3 class="title_view">Creacion de Usuario</h3>
                                         </div>
                                         <div class="input__container">
@@ -147,7 +160,7 @@
                                     </fieldset>
                                     <fieldset class="active__form" id="form2">
                                         <div class="sub__title__container">
-                                            <h4>Pagina 2/8</h4>
+                                            <h4>Pagina 2/10</h4>
                                             <h3 class="title_view">Datos personales</h3>
                                         </div>
                                         <div class="input__container">
@@ -232,7 +245,7 @@
                                     </fieldset>
                                     <fieldset class="active__form" id="form3">
                                         <div class="sub__title__container">
-                                            <h4>Pagina 3/8</h4>
+                                            <h4>Pagina 3/10</h4>
                                             <h3 class="title_view">Antecedentes personales</h3>
                                         </div>
                                         <div class="input__container">
@@ -464,7 +477,7 @@
                                     </fieldset>
                                     <fieldset class="active__form" id="form4">
                                         <div class="sub__title__container">
-                                            <h4>Pagina 4/8</h4>
+                                            <h4>Pagina 4/10</h4>
                                             <h3 class="title_view">Antecedentes familiares</h3>
                                         </div>
                                         <div class="input__container">
@@ -561,7 +574,7 @@
                                     </fieldset>
                                     <fieldset class="active__form" id="form5">
                                         <div class="sub__title__container">
-                                            <h4>Pagina 5/8</h4>
+                                            <h4>Pagina 5/10</h4>
                                             <h3 class="title_view">Datos de actividad fisica</h3>
                                             <p> Del 1 A 4 es Actividad Alta y 1 Es Sedentarismo, Tener en Cuenta Si camina
                                                 Hasta Su lugar de Residencia o Trabajo, Dias que entrena A la Semana, si su
@@ -665,7 +678,7 @@
                                     <fieldset class="active__form" id="form6">
                                         <div class="sub__title__container">
                                             <div class="sub__title__container">
-                                                <h4>Pagina 6/8</h4>
+                                                <h4>Pagina 6/10</h4>
                                                 <h3 class="title_view">Datos Sobre la Alimentacion</h3>
                                             </div>
                                             <div class="row">
@@ -748,10 +761,50 @@
                                     </fieldset>
                                     <fieldset class="active__form" id="form7">
                                         <div class="sub__title__container">
-                                            <h4>Pagina 7/8</h4>
+                                            <h4>Pagina 7/10</h4>
                                             <h3 class="title_view">Alimentos Preferidos</h3>
                                         </div>
-                                            
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Cereales</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Lacteos</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Leguminosas</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Frutas</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Verduras</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
                                             <div class="buttons">
                                                 <a class="prev__btn" onclick="prevForm();">Back</a>
                                                 <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
@@ -759,10 +812,254 @@
                                     </fieldset>
                                     <fieldset class="active__form" id="form8">
                                         <div class="sub__title__container">
-                                            <h4>Pagina 8/8</h4>
+                                            <h4>Pagina 8/10</h4>
+                                            <h3 class="title_view">Alimentos no Preferidos</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Cereales</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Lacteos</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Leguminosas</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Frutas</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Verduras</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="buttons">
+                                                <a class="prev__btn" onclick="prevForm();">Back</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form9">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 9/10</h4>
+                                            <h3 class="title_view">Recordatorio 24 Horas</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Merienda</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">¿Alimentos que consumes?</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Almuerzo</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">¿Alimentos que consumes?</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Merienda</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">¿Alimentos que consumes?</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Cena</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">¿Alimentos que consumes?</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Otros</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="buttons">
+                                                <a class="prev__btn" onclick="prevForm();">Back</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form10">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 10/10</h4>
                                             <h3 class="title_view">Medidas Antropometricas </h3>
                                         </div>
-                                            <h2>8</h2>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">¿peso actual?</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">¿peso Usual?</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Talla</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">C.Braquial</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">C.Abdominal</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">C.Muslo</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">C.Cuello</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">C.Cadera maxima</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">C.cintura</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">P.Tricital</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">P.Abdominal</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">P.Subescapular</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">P.Suprailiaco</label>
+                                                       <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label text-dark">Notas</label>
+                                                       
+                                                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
                                             <div class="buttons">
                                                 <a class="prev__btn" onclick="prevForm();">Back</a>
                                                 <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>

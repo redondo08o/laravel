@@ -7,6 +7,8 @@ const form5 = document.querySelector('#form5');
 const form6 = document.querySelector('#form6');
 const form7 = document.querySelector('#form7');
 const form8 = document.querySelector('#form8');
+const form9 = document.querySelector('#form9')
+const form10 = document.querySelector('#form10');
 
 const icon1 = document.querySelector('#icon1');
 const icon2 = document.querySelector('#icon2');
@@ -16,8 +18,11 @@ const icon5 = document.querySelector('#icon5');
 const icon6 = document.querySelector('#icon6');
 const icon7 = document.querySelector('#icon7');
 const icon8 = document.querySelector('#icon8');
+const icon9 = document.querySelector('#icon9');
+const icon10 = document.querySelector('#icon10');
 
-var viewId = 1;
+
+var viewId = 1;1
 function nextForm(){
     console.log("hellonext");
     viewId=viewId+1;
@@ -42,12 +47,22 @@ function progressBar1(){
         icon3.classList.remove('active');
         icon4.classList.remove('active');
         icon5.classList.remove('active');
+        icon6.classList.remove('active');
+        icon7.classList.remove('active');
+        icon8.classList.remove('active');
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
     }
     if(viewId===2){
         icon2.classList.add('active');
         icon3.classList.remove('active');
         icon4.classList.remove('active');
         icon5.classList.remove('active');
+        icon6.classList.remove('active');
+        icon7.classList.remove('active');
+        icon8.classList.remove('active');
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
     }
     if(viewId===3){
         icon3.classList.add('active');
@@ -56,6 +71,8 @@ function progressBar1(){
         icon6.classList.remove('active');
         icon7.classList.remove('active');
         icon8.classList.remove('active');
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
     }
     if(viewId===4){
         icon4.classList.add('active');
@@ -63,24 +80,41 @@ function progressBar1(){
         icon6.classList.remove('active');
         icon7.classList.remove('active');
         icon8.classList.remove('active');
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
     }
     if(viewId===5){
         icon5.classList.add('active');
         icon6.classList.remove('active');
         icon7.classList.remove('active');
         icon8.classList.remove('active');
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
     }
     if(viewId===6){
         icon6.classList.add('active');
         icon7.classList.remove('active');
         icon8.classList.remove('active');
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
     }
     if(viewId===7){
         icon7.classList.add('active');
         icon8.classList.remove('active');
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
     }
     if(viewId===8){
         icon8.classList.add('active');
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
+    }
+    if(viewId===9){
+        icon9.classList.add('active');
+        icon10.classList.remove('active');
+    }
+    if(viewId===10){
+        icon10.classList.add('active');
        
     }
     
@@ -110,7 +144,15 @@ function progressBar(){
         icon8.classList.add('active');
       
     }
-    if(viewId>8){
+    if(viewId===9){
+        icon9.classList.add('active');
+      
+    }
+    if(viewId===10){
+        icon10.classList.add('active');
+      
+    }
+    if(viewId>10){
         icon2.classList.remove('active');
         icon3.classList.remove('active');
         icon4.classList.remove('active');
@@ -118,14 +160,15 @@ function progressBar(){
         icon6.classList.remove('active');
         icon7.classList.remove('active');
         icon8.classList.remove('active');
-      
+        icon9.classList.remove('active');
+        icon10.classList.remove('active');
     }
     
 }
 
 function displayForms(){
     
-    if(viewId>8){
+    if(viewId>10){
         viewId=1;
     }
 
@@ -137,7 +180,8 @@ function displayForms(){
         form6.style.display = 'none';
         form7.style.display = 'none';
         form8.style.display = 'none';
-
+        form9.style.display = 'none';
+        form10.style.display = 'none';
 
 
     }else if(viewId === 2){
@@ -149,6 +193,8 @@ function displayForms(){
         form6.style.display = 'none';
         form7.style.display = 'none';
         form8.style.display = 'none';
+        form9.style.display = 'none';
+        form10.style.display ='none';
 
     }else if(viewId === 3){
         form1.style.display = 'none';
@@ -159,6 +205,8 @@ function displayForms(){
         form6.style.display = 'none';
         form7.style.display = 'none';
         form8.style.display = 'none';
+        form9.style.display = 'none';
+        form10.style.display = 'none';
 
     }else if(viewId === 4){
         form1.style.display = 'none';
@@ -169,6 +217,8 @@ function displayForms(){
         form6.style.display = 'none';
         form7.style.display = 'none';
         form8.style.display = 'none';
+        form9.style.display = 'none';
+        form10.style.display = 'none';
 
     }else if(viewId === 5){
         form1.style.display = 'none';
@@ -179,6 +229,8 @@ function displayForms(){
         form6.style.display = 'none';
         form7.style.display = 'none';
         form8.style.display = 'none';
+        form9.style.display = 'none';
+        form10.style.display = 'none';
 
     }
     else if(viewId === 6){
@@ -190,6 +242,8 @@ function displayForms(){
         form6.style.display = 'block';
         form7.style.display = 'none';
         form8.style.display = 'none';
+        form9.style.display = 'none';
+        form10.style.display = 'none';
 
     }
     else if(viewId === 7){
@@ -201,6 +255,8 @@ function displayForms(){
         form6.style.display = 'none';
         form7.style.display = 'block';
         form8.style.display = 'none';
+        form9.style.display = 'none';
+        form10.style.display = 'none';
 
     }
     else if(viewId === 8){
@@ -212,6 +268,34 @@ function displayForms(){
         form6.style.display = 'none';
         form7.style.display = 'none';
         form8.style.display = 'block';
+        form9.style.display = 'none';
+        form10.style.display = 'none';
+
+    }
+    else if(viewId === 9){
+        form1.style.display = 'none';
+        form2.style.display = 'none';
+        form3.style.display = 'none';
+        form4.style.display = 'none';
+        form5.style.display = 'none';
+        form6.style.display = 'none';
+        form7.style.display = 'none';
+        form8.style.display = 'none';
+        form9.style.display = 'block';
+        form10.style.display = 'none';
+
+    }
+    else if(viewId === 10){
+        form1.style.display = 'none';
+        form2.style.display = 'none';
+        form3.style.display = 'none';
+        form4.style.display = 'none';
+        form5.style.display = 'none';
+        form6.style.display = 'none';
+        form7.style.display = 'none';
+        form8.style.display = 'none';
+        form9.style.display = 'none';
+        form10.style.display = 'block';
 
     }
 }
