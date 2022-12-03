@@ -32,7 +32,10 @@ $(function () {
     
       
     
-    
+    $(document).ready(function(){
+      $("#list_users").html("<livewire:usuarios-list>")
+
+    });
     
 
 })
