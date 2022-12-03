@@ -53,6 +53,7 @@
     padding: 1.25rem 0 ;
     margin-right: 2rem;
     padding-right: 1.8rem;
+    
 }
 
 .side__titles{
@@ -97,7 +98,7 @@
     list-style: none;
     background: var(--shadow-color);
     padding: 0.5rem 0.6rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 3.8rem;
     border-radius: 50%;
     font-size: 1.4rem;
     color: #ffffff;
@@ -107,7 +108,7 @@
 .progress__bar__container ul li::before{
     content: '';
     width: 1px;
-    height: 11vh;
+    height: 18.2vh;
     position: absolute;
     background-color: var(--shadow-color);
 
@@ -116,7 +117,7 @@
 .progress__bar__container ul .active::before{
     content: '';
     width: 1px;
-    height: 11vh;
+    height: 14.8vh;
     position: absolute;
     background-color: var(--secondery-color);
     /* z-index: -1; */
