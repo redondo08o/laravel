@@ -1,458 +1,990 @@
-<?php $act = "pacientes"; ?>
+<?php $act = 'pacientes'; ?>
 
 @extends('layouts.admin')
 
 @section('content')
+    <div class="card mb-4">
+        <div class="card-header pb-0">
+            <h6 class="md-4">Pacientes</h6>
+            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Nuevo paciente</button>
 
-<div class="card mb-4">
-    <div class="card-header pb-0">
-        <h6 class="md-4">Pacientes</h6>
-        <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo paciente</button>
-
-    </div>
+        </div>
 
 
-    <div class="modal fade position-relative w-1000 " style="overflow-y:hidden" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="form__container">
-                        <div class="title__container">
-                            <h1 class="t"> Crear Historia Clinica</h1>
-                            <p class="sec">En esta sesion podra crear la historia clinica</p>
-                        </div>
-                        <div class="body__container">
-                            <div class="left__container">
-                                <div class="side__titles">
-                                    <div class="title__name">
-                                        <h3>Usuario</h3>
-                                        <p>LLenar y continuar</p>
-                                    </div>
-                                    <div class="title__name">
-                                        <h3>Datos personales</h3>
-                                        <p>LLenar y continuar</p>
-                                    </div>
-                                    <div class="title__name">
-                                        <h3>Antecedes personales</h3>
-                                        <p>selecionar y continuar</p>
-                                    </div>
-                                    <div class="title__name">
-                                        <h3>Antecedes familiares</h3>
-                                        <p>selecionar y continuar</p>
-                                    </div>
-                                    <div class="title__name">
-                                        <h3>Datos alimenticios</h3>
-                                        <p>LLenar y continuar</p>
-                                    </div>
-                                    <div class="title__name">
-                                        <h3>Actividad fisica</h3>
-                                        <p>LLenar y continuar</p>
-                                    </div>
-                                    <div class="title__name">
-                                        <h3>Seguimiento</h3>
-                                        <p>LLenar y continuar</p>
-                                    </div>
-                                    <div class="title__name">
-                                        <h3>Recordatorio 24 horas</h3>
-                                        <p>LLenar y continuar</p>
-                                    </div>
-                                </div>
-                                <div class="progress__bar__container">
-                                    <ul>
-                                        <li class="active" id="icon1">
-                                            <ion-icon name="person-outline"></ion-icon>
-                                        </li>
-                                        <li id="icon2">
-                                            <ion-icon name="analytics"></ion-icon>
-                                        </li>
-                                        <li id="icon3">
-                                            <ion-icon name="layers-outline"></ion-icon>
-                                        </li>
-                                        <li id="icon4">
-                                            <ion-icon name="pricetag-outline"></ion-icon>
-                                        </li>
-                                        <li id="icon5">
-                                            <ion-icon name="mail-outline"></ion-icon>
-                                        </li>
-                                        <li id="icon6">
-                                            <ion-icon name="layers-outline"></ion-icon>
-                                        </li>
-                                        <li id="icon7">
-                                            <ion-icon name="pricetag-outline"></ion-icon>
-                                        </li>
-                                        <li id="icon8">
-                                            <ion-icon name="mail-outline"></ion-icon>
-                                        </li>
-                                    </ul>
-                                </div>
+        <div class="modal fade position-relative w-1000" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" style="overflow-y: scroll;" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="form__container">
+                            <div class="title__container">
+                                <h1 class="t"> Crear Historia Clinica</h1>
+                                <p class="sec">En esta sesion podra crear la historia clinica</p>
                             </div>
-                            <div class="right__container">
-                                <fieldset id="form1">
-                                    <div class="sub__title__container">
-                                        <p>Step 1/5</p>
-                                        <h3 class="title_view">Creacion de Usuario</h3>
+                            <div class="body__container">
+                                <div class="left__container">
+                                    <div class="side__titles">
+                                        <div class="title__name">
+                                            <h3>Usuario</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Datos personales</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Antecedes personales</h3>
+                                            <p>selecionar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Antecedes familiares</h3>
+                                            <p>selecionar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Datos alimenticios</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Actividad fisica</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Seguimiento</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
+                                        <div class="title__name">
+                                            <h3>Recordatorio 24 horas</h3>
+                                            <p>LLenar y continuar</p>
+                                        </div>
+
                                     </div>
-                                    <div class="input__container">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="form-control-label text-dark">N.o
-                                                        Documento</label>
-                                                    <input class="form-control" type="number" placeholder="4354">
+                                    <div class="progress__bar__container">
+                                        <ul>
+                                            <li class="active" id="icon1">
+                                                <ion-icon name="person-outline"></ion-icon>
+                                            </li>
+                                            <li id="icon2">
+                                                <ion-icon name="analytics"></ion-icon>
+                                            </li>
+                                            <li id="icon3">
+                                                <ion-icon name="layers-outline"></ion-icon>
+                                            </li>
+                                            <li id="icon4">
+                                                <ion-icon name="pricetag-outline"></ion-icon>
+                                            </li>
+                                            <li id="icon5">
+                                                <ion-icon name="mail-outline"></ion-icon>
+                                            </li>
+                                            <li id="icon6">
+                                                <ion-icon name="layers-outline"></ion-icon>
+                                            </li>
+                                            <li id="icon7">
+                                                <ion-icon name="pricetag-outline"></ion-icon>
+                                            </li>
+                                            <li id="icon8">
+                                                <ion-icon name="mail-outline"></ion-icon>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right__container">
+                                    <fieldset id="form1">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 1/8</h4>
+                                            <h3 class="title_view">Creacion de Usuario</h3>
+                                        </div>
+                                        <div class="input__container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">N.o
+                                                            Documento</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Tpo
+                                                            de Documento</label>
+                                                        <select class="form-control" style="height: 49px">
+                                                            <option>Eliga el tipo</option>
+                                                            <option>CC</option>
+                                                            <option>Ti</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">rol</label>
+                                                        <select class="form-control" style="height: 49px">
+                                                            <option>Escoja rol</option>
+                                                            <option>administrador</option>
+                                                            <option>Paciente</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Nombre de usuario</label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Contraseña</label>
+                                                        <input class="form-control" type="password">
+                                                    </div>
+                                                </div>
+                                                <a class="nxt__btn" onclick="nextForm();"> Next</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form2">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 2/8</h4>
+                                            <h3 class="title_view">Datos personales</h3>
+                                        </div>
+                                        <div class="input__container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Fecha de nacimiento</label>
+                                                        <input class="form-control" type="date" style="color: black">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Nombres</label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Apellidos</label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Sexo</label><br>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Masculino</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Femenino</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Edad</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Ocupacion</label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Correo electronico</label>
+                                                        <input class="form-control" type="email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Telefono</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Direccion</label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="example-text-input" class="form-control-label text-dark">Tpo
-                                                        de Documento</label>
-                                                    <select class="form-control" style="height: 49px">
-                                                        <option>Eliga el tipo</option>
-                                                        <option>CC</option>
-                                                        <option>Ti</option>
-                                                    </select>
+
+                                            <div class="buttons">
+                                                <a class="prev__btn" onclick="prevForm();">Back</a>
+                                                <a class="nxt__btn" onclick="nextForm();">Next</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form3">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 3/8</h4>
+                                            <h3 class="title_view">Antecedentes personales</h3>
+                                        </div>
+                                        <div class="input__container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">¿ha sido
+                                                            operado?</label><br>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Si</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">¿Toma algun
+                                                            medicamento?</label><br>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Si</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿ha consumido algun
+                                                                tipo de sustancias alucinogeneas?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+                                                            <input class="form-control" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿ha presentado
+                                                                sintomas de diarrea?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿Alergico algun
+                                                                medicamento?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+                                                            <input class="form-control" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿ha presentado
+                                                                sintomas de estreñimiento?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿Complemento o
+                                                                suplemento nutricional?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+                                                            <input type="text" name="" id=""
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿ha presenado sintomas
+                                                                de gastritis?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿Ulceras
+                                                                Nauseas?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿Vomitos?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿Dolor
+                                                                Abdominal?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿Estado de
+                                                                embarazo?</label><br>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input"
+                                                                class="ml-2">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">Si</label>
+                                                            <input type="radio"
+                                                                aria-label="Radio button for following text input">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="example-text-input"
+                                                                class="form-control-label text-dark">¿Meses de
+                                                                gestacion?</label><br>
+                                                            <input type="text" name="" id=""
+                                                                class="form-control">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="buttons">
+                                                <a class="prev__btn" onclick="prevForm();">Back</a>
+                                                <a class="nxt__btn" onclick="nextForm();">Next</a>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form4">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 4/8</h4>
+                                            <h3 class="title_view">Antecedentes familiares</h3>
+                                        </div>
+                                        <div class="input__container">
+                                            <div class="row">
                                                 <div class="form-group">
-                                                    <label for="example-text-input" class="form-control-label text-dark">rol</label>
-                                                    <select class="form-control" style="height: 49px">
-                                                        <option>Escoja rol</option>
-                                                        <option>administrador</option>
-                                                        <option>Paciente</option>
-                                                    </select>
+                                                    <div class="col-md-8">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="text-dark">Enfermedades
+                                                            respiratorias o alergicas</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Si</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">No</label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="row">
                                                 <div class="form-group">
-                                                    <label for="example-text-input" class="form-control-label text-dark">Nombre de usuario</label>
-                                                    <input class="form-control" type="text" placeholder="jesus@">
+                                                    <div class="col-md-12">
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md">
+                                            <div class="row">
                                                 <div class="form-group">
-                                                    <label for="example-text-input" class="form-control-label text-dark">Contraseña</label>
-                                                    <input class="form-control" type="password">
+                                                    <div class="col-md-8">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="text-dark">Enfermedades
+                                                            Cardio vasculares</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Si</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">No</label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <a class="nxt__btn" onclick="nextForm();"> Next</a>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="active__form" id="form2">
-                                    <div class="sub__title__container">
-                                        <p>Step 2/5</p>
-                                        <h2>Datos personales</h2>
-                                        <p>Please let us know what type of business best describes you as entreprenuer
-                                            or
-                                            businessman.</p>
-                                    </div>
-
-                                    <div class="input__container">
-                                        <div class="selection newB">
-                                            <div class="imoji">
-                                                <ion-icon name="happy"></ion-icon>
-
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="descriptionTitle">
-                                                <h3>New Business</h3>
-                                                <p>Started trading in last 12 months</p>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Diabetes</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Obesidad</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Canceres</label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="selection exitB">
-                                            <div class="imoji">
-                                                <ion-icon name="business"></ion-icon>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="text-dark">Otros</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="descriptionTitle">
-                                                <h3>Existing Business</h3>
-                                                <p>Have been operating beyond 12 months</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="buttons">
-                                            <a class="prev__btn" onclick="prevForm();">Back</a>
-                                            <a class="nxt__btn" onclick="nextForm();">Next</a>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="active__form" id="form3">
-                                    <div class="sub__title__container">
-                                        <p>Step 3/5</p>
-                                        <h2>What service are looking for ?</h2>
-                                        <p>Please let us know what type of business best describes you as entreprenuer
-                                            or
-                                            businessman.</p>
-                                    </div>
-
-                                    <div class="input__container">
-                                        <div class="selection newB">
-                                            <div class="imoji">
-                                                <ion-icon name="desktop"></ion-icon>
-
-                                            </div>
-                                            <div class="descriptionTitle">
-                                                <h3>Website Development</h3>
-                                                <p>Development of online websites</p>
+                                            <div class="buttons">
+                                                <a class="prev__btn" onclick="prevForm();">Back</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
                                             </div>
                                         </div>
-                                        <div class="selection exitB">
-                                            <div class="imoji">
-                                                <ion-icon name="phone-portrait"></ion-icon>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form5">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 5/8</h4>
+                                            <h3 class="title_view">Datos de actividad fisica</h3>
+                                            <p> Del 1 A 4 es Actividad Alta y 1 Es Sedentarismo, Tener en Cuenta Si camina
+                                                Hasta Su lugar de Residencia o Trabajo, Dias que entrena A la Semana, si su
+                                                Trabajo es de oficina o un Trabajo de Campo</p>
+                                        </div>
+                                        <div class="input__container">
+                                            <h5 class="title_view">Frecuencia de actividad fisica</h5>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">
+                                                            1 Sedentarismo Poco O nada de Ejercicio
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="descriptionTitle">
-                                                <h3>Development of Mobile App</h3>
-                                                <p>Development of android and IOS mobile app</p>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">
+                                                            2 Leve/ Ejercicio de 1 A 3 Veces Por Semana
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">
+                                                            3 Moderado/ Ejercicio de 3 A 5 Dias A la Semana
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">
+                                                            4 Actividad Alta/ Ejericio de 6 A 7 Dias A la Semana
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">5 Ejercicio Muy Fuerte/
+                                                            Dos Veces al Dia
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">¿Va al Gimnasio, Practica
+                                                            algun Deporte O Realia Sesiones de Cardio?
+                                                        </label><br>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Si</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">No</label>
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="text-dark">¿Cuales?</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="buttons">
+                                                <a class="prev__btn" onclick="prevForm();">Back</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
                                             </div>
                                         </div>
-                                        <div class="buttons">
-                                            <a class="prev__btn" onclick="prevForm();">Back</a>
-                                            <a class="nxt__btn" onclick="nextForm();">Next</a>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form6">
+                                        <div class="sub__title__container">
+                                            <div class="sub__title__container">
+                                                <h4>Pagina 6/8</h4>
+                                                <h3 class="title_view">Datos Sobre la Alimentacion</h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">¿Dedica Tiempo a la Elaboracion de comidas?
+                                                        </label><br>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input"
+                                                            class="ml-2">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Si</label>
+                                                        <input type="radio"
+                                                            aria-label="Radio button for following text input">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">No</label>
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="text-dark">¿Porque?</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">¿ # De Veces que Consume Comida Chatarra?
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Diario</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Semanal</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Quincenal</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">Mensual</label>
+                                                        <input class="form-control" type="number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="example-text-input"
+                                                            class="form-control-label text-dark">¿En que sitio suele consumir sus Comidas(Trabajo o Universidad)?
+                                                        </label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="active__form" id="form4">
-                                    <div class="sub__title__container">
-                                        <p>Step 4/5</p>
-                                        <h2>Please select your budget</h2>
-                                        <p>Please let us know budget for your project so yes are great that we can give
-                                            the
-                                            right quote thanks</p>
-                                    </div>
-
-                                    <div class="input__container">
-
-
-                                        <input type="range" min="10000" max="500000" value="250000" class="slider">
-                                        <div class="output__value">
-
-                                        </div>
-
-                                        <div class="buttons">
-                                            <a class="prev__btn" onclick="prevForm();">Back</a>
-                                            <a class="nxt__btn" onclick="nextForm();">Next</a>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="active__form" id="form5">
-                                    <div class="sub__title__container">
-                                        <p>Step 5/5</p>
-                                        <h2>Complete Submission</h2>
-                                        <p>Thanks for completing the form and for your time.Plss enter your email below
-                                            and
-                                            submit the form</p>
-                                    </div>
-
-                                    <div class="input__container">
-                                        <label for="Email">Enter your email</label>
-                                        <input type="text">
                                         <div class="buttons">
                                             <a class="prev__btn" onclick="prevForm();">Back</a>
                                             <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
                                         </div>
-
-                                    </div>
-                                </fieldset>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form7">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 7/8</h4>
+                                            <h3 class="title_view">Alimentos Preferidos</h3>
+                                        </div>
+                                            
+                                            <div class="buttons">
+                                                <a class="prev__btn" onclick="prevForm();">Back</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="active__form" id="form8">
+                                        <div class="sub__title__container">
+                                            <h4>Pagina 8/8</h4>
+                                            <h3 class="title_view">Medidas Antropometricas </h3>
+                                        </div>
+                                            <h2>8</h2>
+                                            <div class="buttons">
+                                                <a class="prev__btn" onclick="prevForm();">Back</a>
+                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Next</a>
+                                        </div>
+                                    </fieldset>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn bg-gradient-primary">Save changes</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn bg-gradient-primary">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
-    <div class="card-body px-0 pt-0 pb-2">
-        <div class="table-responsive p-0">
-            <table class="table align-items-center mb-0">
-                <thead>
-                    <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function
-                        </th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                            Status</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                            Employed</th>
-                        <th class="text-secondary opacity-7"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
+        <div class="card-body px-0 pt-0 pb-2">
+            <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                    <thead>
+                        <tr>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
+                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function
+                            </th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Status</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                Employed</th>
+                            <th class="text-secondary opacity-7"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="mb-0 text-sm">John Michael</h6>
+                                        <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">John Michael</h6>
-                                    <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">Manager</p>
+                                <p class="text-xs text-secondary mb-0">Organization</p>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <span class="badge badge-sm bg-gradient-success">Online</span>
+                            </td>
+                            <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                            </td>
+                            <td class="align-middle">
+                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                    data-toggle="tooltip" data-original-title="Edit user">
+                                    Edit
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user2">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="mb-0 text-sm">Alexa Liras</h6>
+                                        <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">Manager</p>
-                            <p class="text-xs text-secondary mb-0">Organization</p>
-                        </td>
-                        <td class="align-middle text-center text-sm">
-                            <span class="badge badge-sm bg-gradient-success">Online</span>
-                        </td>
-                        <td class="align-middle text-center">
-                            <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
-                        </td>
-                        <td class="align-middle">
-                            <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                Edit
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user2">
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">Programator</p>
+                                <p class="text-xs text-secondary mb-0">Developer</p>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                            </td>
+                            <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
+                            </td>
+                            <td class="align-middle">
+                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                    data-toggle="tooltip" data-original-title="Edit user">
+                                    Edit
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user3">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="mb-0 text-sm">Laurent Perrier</h6>
+                                        <p class="text-xs text-secondary mb-0">laurent@creative-tim.com</p>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">Alexa Liras</h6>
-                                    <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">Executive</p>
+                                <p class="text-xs text-secondary mb-0">Projects</p>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <span class="badge badge-sm bg-gradient-success">Online</span>
+                            </td>
+                            <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
+                            </td>
+                            <td class="align-middle">
+                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                    data-toggle="tooltip" data-original-title="Edit user">
+                                    Edit
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user4">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="mb-0 text-sm">Michael Levi</h6>
+                                        <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">Programator</p>
-                            <p class="text-xs text-secondary mb-0">Developer</p>
-                        </td>
-                        <td class="align-middle text-center text-sm">
-                            <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                        </td>
-                        <td class="align-middle text-center">
-                            <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
-                        </td>
-                        <td class="align-middle">
-                            <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                Edit
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user3">
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">Programator</p>
+                                <p class="text-xs text-secondary mb-0">Developer</p>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <span class="badge badge-sm bg-gradient-success">Online</span>
+                            </td>
+                            <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
+                            </td>
+                            <td class="align-middle">
+                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                    data-toggle="tooltip" data-original-title="Edit user">
+                                    Edit
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user5">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="mb-0 text-sm">Richard Gran</h6>
+                                        <p class="text-xs text-secondary mb-0">richard@creative-tim.com</p>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">Laurent Perrier</h6>
-                                    <p class="text-xs text-secondary mb-0">laurent@creative-tim.com</p>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">Manager</p>
+                                <p class="text-xs text-secondary mb-0">Executive</p>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                            </td>
+                            <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
+                            </td>
+                            <td class="align-middle">
+                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                    data-toggle="tooltip" data-original-title="Edit user">
+                                    Edit
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div>
+                                        <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user6">
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="mb-0 text-sm">Miriam Eric</h6>
+                                        <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">Executive</p>
-                            <p class="text-xs text-secondary mb-0">Projects</p>
-                        </td>
-                        <td class="align-middle text-center text-sm">
-                            <span class="badge badge-sm bg-gradient-success">Online</span>
-                        </td>
-                        <td class="align-middle text-center">
-                            <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
-                        </td>
-                        <td class="align-middle">
-                            <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                Edit
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="../assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user4">
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">Michael Levi</h6>
-                                    <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">Programator</p>
-                            <p class="text-xs text-secondary mb-0">Developer</p>
-                        </td>
-                        <td class="align-middle text-center text-sm">
-                            <span class="badge badge-sm bg-gradient-success">Online</span>
-                        </td>
-                        <td class="align-middle text-center">
-                            <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
-                        </td>
-                        <td class="align-middle">
-                            <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                Edit
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user5">
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">Richard Gran</h6>
-                                    <p class="text-xs text-secondary mb-0">richard@creative-tim.com</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">Manager</p>
-                            <p class="text-xs text-secondary mb-0">Executive</p>
-                        </td>
-                        <td class="align-middle text-center text-sm">
-                            <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                        </td>
-                        <td class="align-middle text-center">
-                            <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
-                        </td>
-                        <td class="align-middle">
-                            <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                Edit
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="d-flex px-2 py-1">
-                                <div>
-                                    <img src="../assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user6">
-                                </div>
-                                <div class="d-flex flex-column justify-content-center">
-                                    <h6 class="mb-0 text-sm">Miriam Eric</h6>
-                                    <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="text-xs font-weight-bold mb-0">Programtor</p>
-                            <p class="text-xs text-secondary mb-0">Developer</p>
-                        </td>
-                        <td class="align-middle text-center text-sm">
-                            <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                        </td>
-                        <td class="align-middle text-center">
-                            <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
-                        </td>
-                        <td class="align-middle">
-                            <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                Edit
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                            <td>
+                                <p class="text-xs font-weight-bold mb-0">Programtor</p>
+                                <p class="text-xs text-secondary mb-0">Developer</p>
+                            </td>
+                            <td class="align-middle text-center text-sm">
+                                <span class="badge badge-sm bg-gradient-secondary">Offline</span>
+                            </td>
+                            <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
+                            </td>
+                            <td class="align-middle">
+                                <a href="javascript:;" class="text-secondary font-weight-bold text-xs"
+                                    data-toggle="tooltip" data-original-title="Edit user">
+                                    Edit
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
+    <style>
+        .modal-dialog {
+            overflow-y: initial !important
+        }
 
+        .modal-body {
+            height: 550px;
+            overflow-y: auto;
+        }
+    </style>
 @endsection
