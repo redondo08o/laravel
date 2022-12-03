@@ -50,7 +50,7 @@
                                             <p>LLenar y continuar</p>
                                         </div>
                                         <div class="title__name">
-                                            <h3>Alimentos  Preferidos</h3>
+                                            <h3>Alimentos Preferidos</h3>
                                             <p>LLenar y continuar</p>
                                         </div>
                                         <div class="title__name">
@@ -69,34 +69,34 @@
                                     <div class="progress__bar__container">
                                         <ul>
                                             <li class="active" id="icon1">
-                                                <ion-icon name="person-outline"></ion-icon>
+                                                <i class="bi bi-people-fill"></i>
                                             </li>
                                             <li id="icon2">
-                                                <ion-icon name="analytics"></ion-icon>
+                                                <i class="bi bi-clipboard-data-fill"></i>
                                             </li>
                                             <li id="icon3">
-                                                <ion-icon name="layers-outline"></ion-icon>
+                                                <i class="bi bi-clipboard-check"></i>
                                             </li>
                                             <li id="icon4">
-                                                <ion-icon name="pricetag-outline"></ion-icon>
+                                                <i class="bi bi-clipboard2-check"></i>
                                             </li>
                                             <li id="icon5">
-                                                <ion-icon name="mail-outline"></ion-icon>
+                                                <ion-icon name="basketball-outline"></ion-icon>
                                             </li>
                                             <li id="icon6">
-                                                <ion-icon name="layers-outline"></ion-icon>
+                                                <ion-icon name="nutrition-outline"></ion-icon>
                                             </li>
                                             <li id="icon7">
-                                                <ion-icon name="pricetag-outline"></ion-icon>
+                                                <ion-icon name="pizza-outline"></ion-icon>
                                             </li>
                                             <li id="icon8">
-                                                <ion-icon name="mail-outline"></ion-icon>
+                                                <ion-icon name="pint-outline"></ion-icon>
                                             </li>
                                             <li id="icon9">
-                                                <ion-icon name="mail-outline"></ion-icon>
+                                                <ion-icon name="notifications-outline"></ion-icon>
                                             </li>
                                             <li id="icon10">
-                                                <ion-icon name="mail-outline"></ion-icon>
+                                                <i class="bi bi-rulers"></i>
                                             </li>
                                         </ul>
                                     </div>
@@ -110,50 +110,52 @@
                                         <div class="input__container">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="example-text-input"
-                                                            class="form-control-label text-dark">N.o
-                                                            Documento</label>
-                                                        <input class="form-control" type="number">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="example-text-input"
-                                                            class="form-control-label text-dark">Tpo
-                                                            de Documento</label>
-                                                        <select class="form-control" style="height: 49px">
-                                                            <option>Eliga el tipo</option>
-                                                            <option>CC</option>
-                                                            <option>Ti</option>
+                                                    <div class="form-floating mb-3">
+                                                        <select name="tp_doc" id="tp_doc" class="form-control">
+                                                            <option value="cc">cc</option>
+                                                            <option value="ti">ti</option>
                                                         </select>
+                                                        <label class="text-dark" id="tp_doc">Tipo de documento</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="example-text-input"
-                                                            class="form-control-label text-dark">rol</label>
-                                                        <select class="form-control" style="height: 49px">
-                                                            <option>Escoja rol</option>
-                                                            <option>administrador</option>
-                                                            <option>Paciente</option>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="number" name="n_doc" class="form-control"
+                                                            id="n_doc">
+                                                        <label class="text-dark" for="n_doc">N° documento</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" name="alias" class="form-control"
+                                                            id="alias">
+                                                        <label class="text-dark" for="alias">Nombre de usuario</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="password" name="contraseña" class="form-control"
+                                                            id="contraseña">
+                                                        <label class="text-dark" for="contraseña">Contraseña</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="email" name="correo" class="form-control"
+                                                            id="correo">
+                                                        <label class="text-dark" for="correo">Correo</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-3">
+                                                        <select name="rol" id="" class="form-control" id="rol" >
+                                                            <option  value="Administrador">Administador</option>
+                                                            <option value="Nutricionista">Nutricionista</option>
                                                         </select>
+                                                        <label class="text-dark" for="rol">Rol</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="example-text-input"
-                                                            class="form-control-label text-dark">Nombre de usuario</label>
-                                                        <input class="form-control" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="example-text-input"
-                                                            class="form-control-label text-dark">Contraseña</label>
-                                                        <input class="form-control" type="password">
-                                                    </div>
-                                                </div>
+
                                                 <a class="nxt__btn" onclick="nextForm();"> Siguiente</a>
                                             </div>
                                         </div>
@@ -168,7 +170,8 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="example-text-input"
-                                                            class="form-control-label text-dark">Fecha de nacimiento</label>
+                                                            class="form-control-label text-dark">Fecha de
+                                                            nacimiento</label>
                                                         <input class="form-control" type="date" style="color: black">
                                                     </div>
                                                 </div>
@@ -212,13 +215,6 @@
                                                         <label for="example-text-input"
                                                             class="form-control-label text-dark">Ocupacion</label>
                                                         <input class="form-control" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label for="example-text-input"
-                                                            class="form-control-label text-dark">Correo electronico</label>
-                                                        <input class="form-control" type="email">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-8">
@@ -685,7 +681,8 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="example-text-input"
-                                                            class="form-control-label text-dark">¿Dedica Tiempo a la Elaboracion de comidas?
+                                                            class="form-control-label text-dark">¿Dedica Tiempo a la
+                                                            Elaboracion de comidas?
                                                         </label><br>
                                                         <input type="radio"
                                                             aria-label="Radio button for following text input"
@@ -706,7 +703,8 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="example-text-input"
-                                                            class="form-control-label text-dark">¿ # De Veces que Consume Comida Chatarra?
+                                                            class="form-control-label text-dark">¿ # De Veces que Consume
+                                                            Comida Chatarra?
                                                         </label>
                                                     </div>
                                                 </div>
@@ -747,7 +745,8 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label for="example-text-input"
-                                                            class="form-control-label text-dark">¿En que sitio suele consumir sus Comidas(Trabajo o Universidad)?
+                                                            class="form-control-label text-dark">¿En que sitio suele
+                                                            consumir sus Comidas(Trabajo o Universidad)?
                                                         </label>
                                                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                     </div>
@@ -756,7 +755,7 @@
                                         </div>
                                         <div class="buttons">
                                             <a class="prev__btn" onclick="prevForm();">Atras</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
+                                            <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                         </div>
                                     </fieldset>
                                     <fieldset class="active__form" id="form7">
@@ -769,14 +768,14 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Cereales</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Lacteos</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -785,14 +784,14 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Leguminosas</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Frutas</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -801,13 +800,13 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Verduras</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                            <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
+                                        <div class="buttons">
+                                            <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                            <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                         </div>
                                     </fieldset>
                                     <fieldset class="active__form" id="form8">
@@ -820,14 +819,14 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Cereales</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Lacteos</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -836,14 +835,14 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Leguminosas</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Frutas</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -852,13 +851,13 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Verduras</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                            <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
+                                        <div class="buttons">
+                                            <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                            <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                         </div>
                                     </fieldset>
                                     <fieldset class="active__form" id="form9">
@@ -871,14 +870,15 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Merienda</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
-                                                        class="form-control-label text-dark">¿Alimentos que consumes?</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        class="form-control-label text-dark">¿Alimentos que
+                                                        consumes?</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -887,14 +887,15 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Almuerzo</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
-                                                        class="form-control-label text-dark">¿Alimentos que consumes?</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        class="form-control-label text-dark">¿Alimentos que
+                                                        consumes?</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -903,14 +904,15 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Merienda</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
-                                                        class="form-control-label text-dark">¿Alimentos que consumes?</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        class="form-control-label text-dark">¿Alimentos que
+                                                        consumes?</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -919,14 +921,15 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Cena</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
-                                                        class="form-control-label text-dark">¿Alimentos que consumes?</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        class="form-control-label text-dark">¿Alimentos que
+                                                        consumes?</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -935,13 +938,13 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Otros</label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                            <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
+                                        <div class="buttons">
+                                            <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                            <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Siguiente</a>
                                         </div>
                                     </fieldset>
                                     <fieldset class="active__form" id="form10">
@@ -954,21 +957,21 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">¿peso actual?</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">¿peso Usual?</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Talla</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -977,21 +980,21 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">C.Braquial</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">C.Abdominal</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">C.Muslo</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -1000,21 +1003,21 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">C.Cuello</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">C.Cadera maxima</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">C.cintura</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -1023,14 +1026,14 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">P.Tricital</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">P.Abdominal</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -1039,14 +1042,14 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">P.Subescapular</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">P.Suprailiaco</label>
-                                                       <input type="number" class="form-control">
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -1055,14 +1058,14 @@
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label text-dark">Notas</label>
-                                                       
-                                                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                            <div class="buttons">
-                                                <a class="prev__btn" onclick="prevForm();">Atras</a>
-                                                <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Enviar</a>
+                                        <div class="buttons">
+                                            <a class="prev__btn" onclick="prevForm();">Atras</a>
+                                            <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Enviar</a>
                                         </div>
                                     </fieldset>
                                 </div>

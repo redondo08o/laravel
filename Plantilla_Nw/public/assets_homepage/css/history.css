@@ -98,9 +98,9 @@
     list-style: none;
     background: var(--shadow-color);
     padding: 0.5rem 0.6rem;
-    margin-bottom: 3.8rem;
+    margin-bottom: 3.4rem;
     border-radius: 50%;
-    font-size: 1.4rem;
+    font-size: 15px;
     color: #ffffff;
     margin-left:2rem ;
 }
@@ -111,13 +111,16 @@
     height: 18.2vh;
     position: absolute;
     background-color: var(--shadow-color);
-
 }
+
+.progress__bar__container ul li i{
+    z-index: 10;
+    }
 
 .progress__bar__container ul .active::before{
     content: '';
     width: 1px;
-    height: 14.8vh;
+    height: 18.8vh;
     position: absolute;
     background-color: var(--secondery-color);
     /* z-index: -1; */
