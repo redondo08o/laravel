@@ -30,6 +30,7 @@ class usersController extends Controller
         $usuario->usu_correo = $request->correo;
         $usuario->usu_rol = $request->rol; 
         $usuario->usu_uid = uniqid();
+        $usuario->usu_img = '../assets/img/team-2.jpg';
         $usuario->usu_est = 1;
 
        
