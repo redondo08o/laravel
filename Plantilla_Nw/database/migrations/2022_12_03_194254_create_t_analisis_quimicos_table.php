@@ -15,7 +15,15 @@ return new class extends Migration
     {
         Schema::create('t_analisis_quimicos', function (Blueprint $table) {
             $table->id();
-            
+            $table->string('factor_act');
+            $table->unsignedBigInteger('per_id');
+            $table->unsignedBigInteger('lipi2_id');
+            $table->unsignedBigInteger('p_id');
+            $table->foreign('p_id')->references('id')->on('t_proteinas');
+            $table->foreign('per_id')->references('id')->on('t_datos_pers');
+            $table->foreign('lipi2_id')->references('id')->on('t_lipi2s');
+           
+           
             $table->timestamps();
         });
     }
