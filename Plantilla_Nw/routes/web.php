@@ -47,3 +47,5 @@ route::get('/home_history',[historyController::class, 'index'])->name('history')
 route::get('/users', [usersController::class, 'users'])->name('users');
 
 route::post('/user/registar', [usersController::class,'registrar'])->name('registrar_usuario');
+
+route::get('/frm_editar',[usersController::class,'frm_editar'])->name('frm_editar');

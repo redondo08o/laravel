@@ -35,7 +35,8 @@ class usersController extends Controller
        
         if ( $usuario->save()) {
            return response()->json([
-            'mensaje'=> 'success'
+            'mensaje'=> 'El registro a sido creado con exito',
+            'icono'=> 'success'
            ]);
         }
         else{
@@ -43,8 +44,14 @@ class usersController extends Controller
                 'mensaje'=> 'erro'
              ]);
         }
-         
-
-
     }
+
+    public function frm_editar($usu_uid){
+        $usuario= Usuarios::findOrFail($usu_uid);
+        return response()->json([
+            'mensaje'=> $usuario
+           ]);
+    }
+   
+    
 }

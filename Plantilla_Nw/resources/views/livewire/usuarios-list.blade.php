@@ -24,7 +24,7 @@
             <span class="text-secondary text-xs font-weight-bold">{{ $usuario->usu_num_doc}}</span>
         </td>
         <td class="align-middle">
-            <a href="javascript:;" class="badge badge-sm bg-gradient-info" data-toggle="tooltip" data-original-title="Edit user">
+            <a href="{{route('frm_editar',$usuario->usu_uid)}}" class="badge badge-sm bg-gradient-info" data-toggle="tooltip" data-original-title="Edit user">
                 Editar
             </a>
             <a href="javascript:;" class="badge badge-sm bg-gradient-danger" data-toggle="tooltip" data-original-title="Edit user">
