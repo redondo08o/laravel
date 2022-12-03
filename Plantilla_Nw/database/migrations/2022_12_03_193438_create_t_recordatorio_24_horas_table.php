@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_recordatorio_24_horas', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('re_per_id');
             $table->longText('re_desayuno');
             $table->longText('re_merienda');
             $table->longText('re_almuerzo');

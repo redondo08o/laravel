@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_actividad_fisicas', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('actf_per_id');
             $table->string('actf_tiempo');
             $table->longText('actf_va_gym_o_ deporte');
             $table->string('actf_frecuencia_actfisica');

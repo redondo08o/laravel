@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_ant_personales', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('antper_per_id');
             $table->string('antper_opera_si_no');
             $table->string('antper_medi_si_no');
             $table->longText('antper_sustancia_descp');
