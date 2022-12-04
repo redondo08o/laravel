@@ -18,12 +18,10 @@ return new class extends Migration
             $table->string('factor_act');
             $table->unsignedBigInteger('per_id');
             $table->unsignedBigInteger('lipi2_id');
-            $table->unsignedBigInteger('p_id');
-            $table->foreign('p_id')->references('id')->on('t_proteinas');
+            $table->unsignedBigInteger('personales_id');
             $table->foreign('per_id')->references('id')->on('t_datos_pers');
             $table->foreign('lipi2_id')->references('id')->on('t_lipi2s');
-           
-           
+            $table->foreign('personales_id')->references('id')->on('t_datos_pers');
             $table->timestamps();
         });
     }
