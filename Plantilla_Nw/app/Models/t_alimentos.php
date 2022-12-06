@@ -10,6 +10,7 @@ class t_alimentos extends Model
     use HasFactory;
 
     protected $t_alimento = [
+        'talim_uid',
         'nom_alimento',
         'id_grup'
     ];

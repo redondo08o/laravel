@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_proteinas', function (Blueprint $table) {
             $table->id();
+            $table->text('pro_uid');
             $table->decimal('pro_gramos');
             $table->decimal('pro_kcal');
             $table->decimal('pro_%');

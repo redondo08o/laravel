@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_analisis_quimicos', function (Blueprint $table) {
             $table->id();
+            $table->text('ana_uid');
             $table->string('factor_act');
             $table->unsignedBigInteger('per_id');
             $table->unsignedBigInteger('lipi2_id');

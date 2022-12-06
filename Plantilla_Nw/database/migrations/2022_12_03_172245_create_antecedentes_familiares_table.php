@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('antecedentes_familiares', function (Blueprint $table) {
             $table->id();
+            $table->text('antfami_uid');
             $table->unsignedBigInteger('antfami_per_id');
             $table->string('antfami_enfer_res_alerg');
             $table->string('antfami_canceres');

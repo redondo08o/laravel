@@ -9,6 +9,7 @@ class t_cho extends Model
 {
     use HasFactory;
     protected $t_cho = [
+        'cho_uid',
         'cho_gramos',
         'cho_kcal',
         'cho_%',

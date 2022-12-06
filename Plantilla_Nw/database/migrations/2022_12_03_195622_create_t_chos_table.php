@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_chos', function (Blueprint $table) {
             $table->id();
+            $table->text('cho_uid');
             $table->decimal('cho_gramos');
             $table->decimal('cho_kcal');
             $table->decimal('cho_%');

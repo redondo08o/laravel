@@ -10,6 +10,7 @@ class t_ant_personales extends Model
     use HasFactory;
 
     protected $table_t_ant_personales = [
+        'antp_uid',
         'antper_opera_si_no',
         'antper_medi_si_no',
         'antper_sustancia_descp',

@@ -10,6 +10,7 @@ class t_lipi2 extends Model
     use HasFactory;
 
     protected $lipi2 = [
+        'lipi2_uid',
         'lipi2_gramos',
         'lipi2_kcal',
         'lipi2_%',

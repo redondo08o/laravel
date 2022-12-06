@@ -10,6 +10,7 @@ class datos_alimenticios extends Model
     use HasFactory;
 
     protected $datos_alimenticios = [
+        'ali_uid',
         'ali_frutas_pre',
         'ali_verduras_pre',
         'ali_cereales_pre',

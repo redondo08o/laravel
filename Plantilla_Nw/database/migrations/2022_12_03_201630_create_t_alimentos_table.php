@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_alimentos', function (Blueprint $table) {
             $table->id();
+            $table->text('talim_uid');
             $table->string('nom_alimento');
             $table->unsignedBigInteger('id_grup');
             $table->foreign('id_grup')->references('id')->on('t_grup_alim');

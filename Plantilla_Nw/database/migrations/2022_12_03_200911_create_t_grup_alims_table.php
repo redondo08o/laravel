@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_grup_alim', function (Blueprint $table) {
             $table->id();
+            $table->text('alim_grup_uid');
             $table->string('alim_grup_tp');
             $table->string('alim_grup_cho');
             $table->string('alim_grup_lipi2');

@@ -10,6 +10,7 @@ class seguimientos extends Model
     use HasFactory;
 
     protected $seguimientos = [
+        'seg_uid',
         'seg_fch_valoracion',
         'seg_peso_usu',
         'seg_peso_act',

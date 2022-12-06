@@ -10,6 +10,7 @@ class t_proteina extends Model
     use HasFactory;
 
     protected $t_proteina = [
+        'pro_uid',
         'pro_gramos',
         'pro_kcal',
         'pro_%',

@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_lipi2s', function (Blueprint $table) {
             $table->id();
+            $table->text('lipi2_uid');
             $table->decimal('lipi2_gramos');
             $table->decimal('lipi2_kcal');
             $table->decimal('lipi2_%');

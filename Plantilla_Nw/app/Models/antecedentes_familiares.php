@@ -10,7 +10,7 @@ class antecedentes_familiares extends Model
     use HasFactory;
 
     protected $tabla_antecedentes_familiares = [
-        'id',
+        'antfami_uid',
         'antfami_enfer_res_alerg',
         'antfami_canceres',
         'antfami_obesidad',

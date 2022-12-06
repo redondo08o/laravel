@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('seguimientos', function (Blueprint $table) {
             $table->id();
+            $table->text('seg_uid');
             $table->string('seg_fch_valoracion');
             $table->decimal('seg_peso_usu');
             $table->decimal('seg_peso_act');

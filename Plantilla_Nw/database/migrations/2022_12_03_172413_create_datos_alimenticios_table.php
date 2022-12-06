@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('datos_alimenticios', function (Blueprint $table) {
             $table->id();
+            $table->text('ali_uid');
             $table->text('ali_frutas_pre');
             $table->text('ali_verduras_pre');
             $table->text('ali_cereales_pre');

@@ -10,6 +10,7 @@ class t_analisis_quimico extends Model
     use HasFactory;
 
     protected $t_analisis_quimico = [
+        'ana_uid',
         'factor_act',
         'per_id',
         'lipi2_id',

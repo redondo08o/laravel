@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_datos_pers', function (Blueprint $table) {
             $table->id();
+            $table->text('per_uid');
             $table->unsignedBigInteger('per_usu_id');
             $table->date('per_fecha_nacimiento');
             $table->string('per_nombre');
