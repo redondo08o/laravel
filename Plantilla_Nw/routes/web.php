@@ -49,3 +49,7 @@ route::get('/users', [usersController::class, 'users'])->name('users');
 route::post('/user/registar', [usersController::class,'registrar'])->name('registrar_usuario');
 
 route::get('/frm_editar',[usersController::class,'frm_editar'])->name('frm_editar');
+
+route::post('/editar_usuario',[usersController::class,'editar'])->name('editar_usuario');
+
+route::get('/listado_usuarios', [usersController::class, 'listar'])->name('listado_usuarios');
