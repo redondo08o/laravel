@@ -120,7 +120,7 @@
 .progress__bar__container ul .active::before{
     content: '';
     width: 1px;
-    height: 18.8vh;
+    height: 15vh;
     position: absolute;
     background-color: var(--secondery-color);
     /* z-index: -1; */
@@ -173,7 +173,7 @@
     border: 1px solid var(--secondery-color);    
     margin-bottom: 1.2rem;
     outline: none;
-    color: #ffffff;
+    color: #000000;
 }
 
 .nxt__btn{

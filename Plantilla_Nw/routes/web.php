@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\historyController;
+
 use App\Http\Controllers\usersController;
+use App\Http\Controllers\pacienteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,3 +54,5 @@ route::get('/frm_editar',[usersController::class,'frm_editar'])->name('frm_edita
 route::post('/editar_usuario',[usersController::class,'editar'])->name('editar_usuario');
 
 route::get('/listado_usuarios', [usersController::class, 'listar'])->name('listado_usuarios');
+
+route::post('/paciente/registar', [pacienteController::class,'registrar'])->name('registrar_paciente');
